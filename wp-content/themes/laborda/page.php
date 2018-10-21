@@ -14,6 +14,14 @@
 
 get_header();
 ?>
+<?php if ( get_field( 'show' ) ) : ?>
+	<div class="jumbotron jumbotron-fluid" style="background-image: url(<?php the_field( 'image' ); ?>)">
+	  <div class="container" style="color: <?php the_field( 'color' ); ?>">
+	    <h1 class="display-4"><?php the_field( 'title' ); ?></h1>
+	    <p class="lead"><?php the_field( 'subtitle' ); ?></p>
+	  </div>
+	</div>
+<?php endif; ?>
 
 <div class="container">
 	<div class="row">

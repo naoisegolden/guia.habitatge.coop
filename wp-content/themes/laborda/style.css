@@ -1063,3 +1063,8 @@ svg {
 .site-search-button path {
 	color: var(--navy);
 }
+
+.jumbotron {
+	background-size: cover;
+	background-position: center center;
+}
