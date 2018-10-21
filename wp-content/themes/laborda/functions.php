@@ -159,3 +159,23 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+
+/**
+ * Custom theme settings.
+ */
+function footer_widget_area() {
+	register_sidebar( array(
+		'name'          => 'Footer Left',
+		'id'            => 'footer_left',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+	) );
+	register_sidebar( array(
+		'name'          => 'Footer Right',
+		'id'            => 'footer_right',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+	) );
+}
+add_action( 'widgets_init', 'footer_widget_area' );

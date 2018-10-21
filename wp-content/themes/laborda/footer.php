@@ -17,13 +17,11 @@
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<div class="site-info">
-						<?php
-						/* translators: 1: Theme name, 2: Theme author. */
-						printf( esc_html__( 'Website by %1$s', 'laborda' ), '<a href="https://holon.cat/">HOLON</a>' );
-						?>
-					</div><!-- .site-info -->
-				</div><!-- .col -->
+					<?php dynamic_sidebar( 'footer_left' ); ?>
+				</div>
+				<div class="col">
+					<?php dynamic_sidebar( 'footer_right' ); ?>
+				</div>
 			</div><!-- .row -->
 		</div><!-- .container -->
 	</footer><!-- #colophon -->
