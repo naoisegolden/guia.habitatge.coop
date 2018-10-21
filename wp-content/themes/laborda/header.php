@@ -27,12 +27,13 @@
 	<header id="masthead" class="site-header">
 		<div class="container">
 			<div class="row">
-				<?php
-				the_custom_logo();
-				if ( is_front_page() && is_home() ) :
-					?>
-					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+				<div class="col">
 					<?php
+					the_custom_logo();
+					if ( is_front_page() && is_home() ) :
+						?>
+						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+						<?php
 					else :
 						?>
 						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
@@ -43,7 +44,8 @@
 						?>
 						<p class="site-description"><?php echo $laborda_description; /* WPCS: xss ok. */ ?></p>
 					<?php endif; ?>
-
+				</div><!-- .col -->
+				<div class="col">
 					<nav id="site-navigation" class="main-navigation">
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'laborda' ); ?></button>
 						<?php
@@ -58,6 +60,7 @@
 							</svg>
 						</a>
 					</nav><!-- #site-navigation -->
+				</div><!-- .col -->
 			</div><!-- .row -->
 		</div><!-- .container -->
 	</header><!-- #masthead -->

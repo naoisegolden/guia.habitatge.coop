@@ -18,12 +18,14 @@
 	<footer id="colophon" class="site-footer">
 		<div class="container">
 			<div class="row">
-				<div class="site-info">
-					<?php
-					/* translators: 1: Theme name, 2: Theme author. */
-					printf( esc_html__( 'Website by %1$s', 'laborda' ), '<a href="https://holon.cat/">HOLON</a>' );
-					?>
-				</div><!-- .site-info -->
+				<div class="col">
+					<div class="site-info">
+						<?php
+						/* translators: 1: Theme name, 2: Theme author. */
+						printf( esc_html__( 'Website by %1$s', 'laborda' ), '<a href="https://holon.cat/">HOLON</a>' );
+						?>
+					</div><!-- .site-info -->
+				</div><!-- .col -->
 			</div><!-- .row -->
 		</div><!-- .container -->
 	</footer><!-- #colophon -->
