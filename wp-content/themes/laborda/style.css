@@ -981,8 +981,11 @@ object {
 	--font-family: 'PT Sans', sans-serif;
 
 	--header-padding: 16px;
-	--header-menu-font: bold 30px var(--font-family);
+	--header-menu-font: bold 24px var(--font-family);
 	--header-menu-gutter: 32px;
+	--logo-gutter: 16px;
+	--logo-height: 40px;
+	--logo-width: 117px;
 	--icon-size: 24px;
 	--description-width: 200px;
 
@@ -1002,9 +1005,11 @@ svg {
 
 .site-header {
   box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.12);
-	display: flex;
-	align-items: center;
 	padding: var(--header-padding) 0;
+}
+
+.site-header .row {
+	align-items: center;
 }
 
 .site-title,
@@ -1012,12 +1017,26 @@ svg {
 	color: var(--navy);
 	float: left;
 	margin: 0;
-	margin-right: var(--header-menu-gutter);
+}
+
+
+.site-title a {
+	margin-right: var(--logo-gutter);
+  display: block;
+  background: url(images/logo.svg) center center no-repeat;
+  background-size: contain;
+  height: var(--logo-height);
+	width: var(--logo-width);
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+	margin-top: -8px;
 }
 
 .site-description {
 	line-height: 1rem;
 	text-transform: uppercase;
+	font-weight: bold;
 	width: var(--description-width);
 }
 
