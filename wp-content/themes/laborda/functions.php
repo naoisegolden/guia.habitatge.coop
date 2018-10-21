@@ -121,6 +121,7 @@ add_action( 'widgets_init', 'laborda_widgets_init' );
  */
 function laborda_scripts() {
 	wp_enqueue_style( 'fonts', 'https://fonts.googleapis.com/css?family=PT+Sans' );
+	wp_enqueue_style( 'bootstrap-grid', get_template_directory_uri() . '/css/bootstrap-grid.min.css' );
 	wp_enqueue_style( 'laborda-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'laborda-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
