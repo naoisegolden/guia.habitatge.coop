@@ -44,7 +44,7 @@ if ( ! function_exists( 'laborda_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'laborda' ),
+			'menu-header' => esc_html__( 'Header', 'laborda' ),
 		) );
 
 		/*
@@ -120,10 +120,10 @@ add_action( 'widgets_init', 'laborda_widgets_init' );
  * Enqueue scripts and styles.
  */
 function laborda_scripts() {
+	wp_enqueue_style( 'fonts', 'https://fonts.googleapis.com/css?family=PT+Sans' );
 	wp_enqueue_style( 'laborda-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'laborda-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
-
 	wp_enqueue_script( 'laborda-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -158,4 +158,3 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
-

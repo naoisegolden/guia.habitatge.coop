@@ -1,23 +1,15 @@
 /*!
-Theme Name: laborda
-Theme URI: http://underscores.me/
-Author: Underscores.me
-Author URI: http://underscores.me/
-Description: Description
+Theme Name: La Borda
+Theme URI: https://laborda.coop/
+Author: Naoise Golden Santos
+Author URI: https://naoisegolden.com/
+Description:
 Version: 1.0.0
-License: GNU General Public License v2 or later
-License URI: LICENSE
 Text Domain: laborda
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-
-laborda is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Theme based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
@@ -981,4 +973,75 @@ object {
 
 .gallery-caption {
 	display: block;
+}
+
+/* --- End of Underscores styles --- */
+
+:root {
+	--font-family: 'PT Sans', sans-serif;
+
+	--header-padding: 16px;
+	--header-menu-font: bold 30px var(--font-family);
+	--header-menu-gutter: 32px;
+	--icon-size: 24px;
+	--description-width: 200px;
+
+	--navy: #011936;
+}
+
+body {
+	font-family: var(--font-family);
+}
+
+svg {
+	height: auto;
+	/* Make sure images are scaled correctly. */
+	max-width: 100%;
+	/* Adhere to container width. */
+}
+
+.site-header {
+  box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.12);
+	display: flex;
+	align-items: center;
+	padding: var(--header-padding) 0;
+}
+
+.site-title,
+.site-description {
+	color: var(--navy);
+	float: left;
+	margin: 0;
+	margin-right: var(--header-menu-gutter);
+}
+
+.site-description {
+	line-height: 1rem;
+	text-transform: uppercase;
+	width: var(--description-width);
+}
+
+.main-navigation {
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.main-navigation .menu-item {
+	margin-left: var(--header-menu-gutter);
+}
+
+.main-navigation a {
+	color: var(--navy);
+	font: var(--header-menu-font);
+}
+
+.search-button {
+	height: var(--icon-size);
+	width: var(--icon-size);
+	margin-left: var(--header-menu-gutter);
+}
+
+.site-search-button path {
+	color: var(--navy);
 }
