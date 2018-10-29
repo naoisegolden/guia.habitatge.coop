@@ -985,6 +985,7 @@ object {
 	--brownish-orange: #e3672a;
 	--brownish-purple: #723d54;
 	--lipstick: #d92650;
+	--dusty-lavender: #c9c8c9;
 
 	--font-family: 'PT Sans', sans-serif;
 	--font-color: var(--navy);
@@ -1006,6 +1007,10 @@ object {
 	--activity-card-margin-bottom: 24px;
 	--activity-card-padding: 16px;
 	--border-radius: 5px;
+
+	--breadcrumbs-top-margin: 24px;
+	--breadcrumbs-gutter: 8px;
+	--breadcrumbs-color: var(--dusty-lavender);
 }
 
 body {
@@ -1129,4 +1134,24 @@ svg {
 .activity-card h2 {
 	font-size: 24px;
 	font-weight: bold;
+}
+
+.breadcrumbs {
+	list-style: none;
+	padding: 0;
+	margin: var(--breadcrumbs-top-margin) 0 0 0;
+}
+
+.breadcrumbs__crumb {
+	color: var(--breadcrumbs-color);
+	float: left;
+	margin-right: var(--breadcrumbs-gutter);
+}
+.breadcrumbs__crumb::after {
+	content: '/';
+	margin-left: var(--breadcrumbs-gutter);
+}
+
+.breadcrumbs__crumb:last-of-type::after {
+	content: none;
 }

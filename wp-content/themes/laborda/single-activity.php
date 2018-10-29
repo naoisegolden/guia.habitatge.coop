@@ -1,16 +1,20 @@
 <?php
-/**
- * The template for displaying all single posts
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
- *
- * @package laborda
- */
-
 get_header();
 ?>
 
+<?php
+$category = get_the_category()[0];
+?>
 <div class="container">
+	<div class="row">
+		<div class="col">
+			<ul class="breadcrumbs">
+				<li class="breadcrumbs__crumb"><?php echo __('Activities', 'laborda'); ?></li>
+				<li class="breadcrumbs__crumb"><?php echo $category->name; ?></li>
+				<li class="breadcrumbs__crumb"><?php the_title(); ?></li>
+			</ul>
+		</div>
+	</div>
 	<div class="row">
 		<div id="primary" class="content-area col">
 			<main id="main" class="site-main">
