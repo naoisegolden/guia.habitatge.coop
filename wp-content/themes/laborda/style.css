@@ -978,8 +978,13 @@ object {
 /* --- End of Underscores styles --- */
 
 :root {
+	--white: white;
 	--navy: #011936;
 	--tangerine: #ff9800;
+	--blue-green: #1b929d;
+	--brownish-orange: #e3672a;
+	--brownish-purple: #723d54;
+	--lipstick: #d92650;
 
 	--font-family: 'PT Sans', sans-serif;
 	--font-color: var(--navy);
@@ -997,6 +1002,10 @@ object {
 	--footer-menu-font: bold 24px var(--font-family);
 	--footer-menu-color: white;
 
+	--activity-cards-margin-top: 32px;
+	--activity-card-margin-bottom: 24px;
+	--activity-card-padding: 16px;
+	--border-radius: 5px;
 }
 
 body {
@@ -1090,4 +1099,34 @@ svg {
 .site-footer .menu a {
 	font: var(--footer-menu-font);
 	color: var(--footer-menu-color);
+}
+
+.activity-cards {
+	margin-top: var(--activity-cards-margin-top);
+}
+
+.activity-card__economia { background: var(--blue-green); }
+.activity-card__habitar { background: var(--brownish-orange); }
+.activity-card__juridica { background: var(--brownish-purple); }
+.activity-card__social { background: var(--lipstick); }
+
+.activity-card {;
+	border-radius: var(--border-radius);
+	margin-bottom: var(--activity-card-margin-bottom);
+}
+
+.activity-card__body {
+	display: block;
+	padding: var(--activity-card-padding)
+}
+
+.activity-card a,
+.activity-card a:hover {
+	color: var(--white);
+	text-decoration: none;
+}
+
+.activity-card h2 {
+	font-size: 24px;
+	font-weight: bold;
 }
