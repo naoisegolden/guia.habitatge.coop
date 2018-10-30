@@ -996,7 +996,7 @@ object {
 	--logo-gutter: 16px;
 	--logo-height: 40px;
 	--logo-width: 117px;
-	--icon-size: 24px;
+	--icon-size: 32px;
 	--description-width: 200px;
 	--footer-background-color: var(--tangerine);
 	--footer-padding: 56px;
@@ -1081,8 +1081,8 @@ svg {
 	margin-left: var(--header-menu-gutter);
 }
 
-.site-search-button path {
-	color: var(--font-color);
+.search-button .icon {
+	font-size: var(--icon-size);
 }
 
 .jumbotron {
