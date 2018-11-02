@@ -963,6 +963,9 @@ object {
 	--brownish-purple: #723d54;
 	--lipstick: #d92650;
 	--dusty-lavender: #c9c8c9;
+	--background-grey: #f9f9f9;
+	--icon-grey: #9b9b9b;
+	--icon-background-grey: #f5f5f5;
 
 	--font-family: 'PT Sans', sans-serif;
 	--font-color: var(--navy);
@@ -974,11 +977,13 @@ object {
 	--logo-height: 40px;
 	--logo-width: 117px;
 	--icon-size: 32px;
+	--small-icon-size: 14px;
 	--description-width: 200px;
 	--footer-background-color: var(--tangerine);
 	--footer-padding: 56px;
 	--footer-menu-font: bold 24px var(--font-family);
 	--footer-menu-color: white;
+	--container-content-padding: 64px;
 
 	--activity-cards-margin-top: 32px;
 	--activity-card-margin-bottom: 24px;
@@ -988,6 +993,12 @@ object {
 	--breadcrumbs-top-margin: 24px;
 	--breadcrumbs-gutter: 8px;
 	--breadcrumbs-color: var(--dusty-lavender);
+
+	--carousel-button-color: var(--tangerine);
+	--carousel-button-secondary-color: rgba(255, 152, 0, 0.25);
+
+		--carousel-control-prev-icon-bg: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#ff9800' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+		--carousel-control-next-icon-bg: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#ff9800' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
 
 body {
@@ -999,6 +1010,15 @@ svg {
 	/* Make sure images are scaled correctly. */
 	max-width: 100%;
 	/* Adhere to container width. */
+}
+
+.container-jumbo {
+	background-color: var(--background-grey);
+}
+
+.container-content {
+	padding-top: var(--container-content-padding);
+	padding-bottom: var(--container-content-padding);
 }
 
 .site-header {
@@ -1061,6 +1081,15 @@ svg {
 .search-button .icon {
 	font-size: var(--icon-size);
 }
+
+.social-button {
+	background-color: var(--icon-background-grey);
+	height: var(--icon-size);
+	width: var(--icon-size);
+	display: inline-block;
+	margin-right: var(--logo-gutter);
+}
+
 
 .jumbotron {
 	background-size: cover;
@@ -1131,4 +1160,35 @@ svg {
 
 .breadcrumbs__crumb:last-of-type::after {
 	content: none;
+}
+
+.download-statistics {
+	font-size: var(--small-icon-size);
+	float: left;
+}
+
+.download-statistics .icon {
+	font-size: inherit;
+}
+
+.download-statistics span {
+	vertical-align: text-bottom;
+}
+
+.tip-cards {
+	column-count: 2;
+}
+
+.carousel-control-prev-icon {
+  background-image: var(--carousel-control-prev-icon-bg);
+}
+.carousel-control-next-icon {
+  background-image: var(--carousel-control-next-icon-bg);
+}
+
+.carousel-indicators li {
+	background-color: var(--carousel-button-secondary-color);
+}
+.carousel-indicators li.active {
+	background-color: var(--carousel-button-color);
 }

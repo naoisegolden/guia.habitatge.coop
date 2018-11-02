@@ -3,41 +3,65 @@ get_header();
 ?>
 
 <?php
-$category = get_the_category()[0];
+	$category = get_the_category()[0];
+
+	while ( have_posts() ) :
+		the_post();
 ?>
-<div class="container">
-	<div class="row">
-		<div class="col">
-			<ul class="breadcrumbs">
-				<li class="breadcrumbs__crumb"><?php echo __('Activities', 'laborda'); ?></li>
-				<li class="breadcrumbs__crumb"><?php echo $category->name; ?></li>
-				<li class="breadcrumbs__crumb"><?php the_title(); ?></li>
-			</ul>
-		</div>
-	</div>
-	<div class="row">
-		<div id="primary" class="content-area col">
-			<main id="main" class="site-main">
-			<?php
-			while ( have_posts() ) :
-				the_post();
+	<div class="container">
+		<div class="row">
+			<div id="breadcrumbs" class="col">
+				<ul class="breadcrumbs">
+					<li class="breadcrumbs__crumb"><?php echo __('Activities', 'laborda'); ?></li>
+					<li class="breadcrumbs__crumb"><?php echo $category->name; ?></li>
+					<li class="breadcrumbs__crumb"><?php the_title(); ?></li>
+				</ul>
+			</div>
+		</div><!-- .row -->
+	</div><!-- .container -->
 
-				get_template_part( 'template-parts/content-activity', get_post_type() );
+	<div class="container container-content">
+		<?php get_template_part( 'template-parts/content-activity-main' ); ?>
+	</div><!-- .container -->
 
-				the_post_navigation();
+	<div class="container-jumbo">
+		<div class="container container-content">
+			<?php get_template_part( 'template-parts/content-activity-download' ); ?>
+		</div><!-- .container -->
+	</div><!-- .container-jumbo -->
 
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
+	<div class="container container-content">
+		<?php get_template_part( 'template-parts/content-activity-steps' ); ?>
+	</div><!-- .container -->
 
-			endwhile; // End of the loop.
-			?>
+	<div class="container-jumbo">
+		<div class="container container-content">
+			<?php get_template_part( 'template-parts/content-activity-tips' ); ?>
+		</div><!-- .container -->
+	</div><!-- .container-jumbo -->
 
-			</main><!-- #main -->
-		</div><!-- #primary -->
-	</div><!-- .row -->
-</div><!-- .container -->
+	<div class="container container-content">
+		<?php get_template_part( 'template-parts/content-activity-examples' ); ?>
+	</div><!-- .container -->
+
+	<div class="container container-content">
+		<div class="row">
+			<div id="post-navigation" class="col-12">
+				<?php the_post_navigation(); ?>
+			</div><!-- #post-navigation -->
+
+			<div id="comments" class="col-12">
+				<?php
+					if ( comments_open() || get_comments_number() ) :
+						comments_template();
+					endif;
+				?>
+			</div><!-- #comments -->
+		</div><!-- .row -->
+	</div><!-- .container -->
+<?php
+	endwhile; // End of the loop.
+?>
 
 <?php
 // get_sidebar();
