@@ -1,5 +1,9 @@
 'use strict';
 
-window.shuffleInstance = new window.Shuffle(document.querySelector('.js-cards'), {
-  itemSelector: '.js-card',
-});
+const el = document.querySelector('.js-cards');
+
+if (el) {
+  window.shuffleInstance = new window.Shuffle(el, {
+    itemSelector: '.js-card',
+  });
+}
