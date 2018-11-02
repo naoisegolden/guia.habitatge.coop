@@ -202,3 +202,31 @@ function create_activity_post_type() {
   );
 }
 add_action( 'init', 'create_activity_post_type' );
+
+/**
+ * Move excerpt below activity title
+ */
+function remove_normal_excerpt() {
+    remove_meta_box( 'postexcerpt' , 'activity' , 'normal' );
+}
+add_action( 'admin_menu' , 'remove_normal_excerpt' );
+
+function add_excerpt_meta_box( $post_type ) {
+    if ( in_array( $post_type, array( 'activity' ) ) ) {
+        add_meta_box(
+            'custom_postexcerpt',
+            __( 'Excerpt', 'laborda' ),
+            'post_excerpt_meta_box',
+            $post_type,
+            'after_editor',
+            'high'
+        );
+    }
+}
+add_action( 'add_meta_boxes', 'add_excerpt_meta_box' );
+
+function run_after_editor_meta_boxes() {
+    global $post;
+    do_meta_boxes( get_current_screen(), 'after_editor', $post );
+}
+add_action( 'edit_form_after_editor', 'run_after_editor_meta_boxes' );
