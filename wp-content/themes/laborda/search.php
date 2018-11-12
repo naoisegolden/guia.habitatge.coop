@@ -12,21 +12,29 @@ get_header();
 
 <div class="container">
 	<div class="row">
-		<section id="primary" class="content-area col">
+		<section id="primary" class="content-area col-8 offset-2">
 			<main id="main" class="site-main">
 
-			<?php if ( have_posts() ) : ?>
-
-				<header class="page-header">
-					<h1 class="page-title">
-						<?php
-						/* translators: %s: search query. */
-						printf( esc_html__( 'Search Results for: %s', 'laborda' ), '<span>' . get_search_query() . '</span>' );
-						?>
-					</h1>
-				</header><!-- .page-header -->
-
+			<header class="page-header">
+				<h1 class="page-title">
+					<?php echo __( 'Search Results', 'laborda' ) ?>
+				</h1>
+				<?php get_search_form(); ?>
 				<?php
+				if ( have_posts() ) :
+					/* translators: %s: search query. */
+					?>
+					<p class="mt-3">
+						<?php printf( esc_html__( 'Search Results for "%s"', 'laborda' ), '<span>' . get_search_query() . '</span>' ); ?>
+					</p>
+					<?php
+				endif;
+				?>
+			</header><!-- .page-header -->
+
+			<?php
+			if ( have_posts() ) :
+
 				/* Start the Loop */
 				while ( have_posts() ) :
 					the_post();
@@ -53,6 +61,12 @@ get_header();
 		</section><!-- #primary -->
 	</div><!-- .row -->
 </div><!-- .container -->
+
+<div class="container-jumbo">
+	<div class="container container-content">
+		<?php get_template_part( 'template-parts/content', 'jumbo-help' ); ?>
+	</div><!-- .container -->
+</div><!-- .container-jumbo -->
 
 <?php
 // get_sidebar();

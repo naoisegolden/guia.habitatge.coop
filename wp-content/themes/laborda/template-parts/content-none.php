@@ -10,10 +10,6 @@
 ?>
 
 <section class="no-results not-found">
-	<header class="page-header">
-		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'laborda' ); ?></h1>
-	</header><!-- .page-header -->
-
 	<div class="page-content">
 		<?php
 		if ( is_home() && current_user_can( 'publish_posts' ) ) :
@@ -34,7 +30,8 @@
 		elseif ( is_search() ) :
 			?>
 
-			<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'laborda' ); ?></p>
+			<p><strong><?php esc_html_e( 'Ho sentim, no s\'ha trobat cap resultat', 'laborda' ); ?></strong></p>
+			<p><?php esc_html_e( 'Prova de revisar l\'ortografia, o fer servir paraules similars, per exemple.', 'laborda' ); ?></p>
 			<?php
 		else :
 			?>

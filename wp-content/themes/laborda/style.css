@@ -1192,3 +1192,7 @@ svg {
 .carousel-indicators li.active {
 	background-color: var(--carousel-button-color);
 }
+
+.search-form input[type="search"] {
+	width: 100% !important;
+}
