@@ -30,8 +30,8 @@
 		elseif ( is_search() ) :
 			?>
 
-			<p><strong><?php esc_html_e( 'Ho sentim, no s\'ha trobat cap resultat', 'laborda' ); ?></strong></p>
-			<p><?php esc_html_e( 'Prova de revisar l\'ortografia, o fer servir paraules similars, per exemple.', 'laborda' ); ?></p>
+			<p><strong><?php echo __( 'Ho sentim, no s\'ha trobat cap resultat', 'laborda' ); ?></strong></p>
+			<p><?php echo __( 'Prova de revisar l\'ortografia, o fer servir paraules similars, per exemple.', 'laborda' ); ?></p>
 			<?php
 		else :
 			?>

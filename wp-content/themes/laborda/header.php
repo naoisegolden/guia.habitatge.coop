@@ -54,7 +54,7 @@
 							'menu_id'        => 'primary-menu',
 						) );
 						?>
-						<a class="search-button" href="#">
+						<a class="search-button" href="<?php echo get_permalink( get_page_by_path( 'search' ) ) ?>">
 							<i class="material-icons icon">
 								search
 							</i>
