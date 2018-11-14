@@ -232,3 +232,34 @@ function run_after_editor_meta_boxes() {
     do_meta_boxes( get_current_screen(), 'after_editor', $post );
 }
 add_action( 'edit_form_after_editor', 'run_after_editor_meta_boxes' );
+
+
+/**
+ * Custom taxonomies
+ */
+function phase_taxonomy() {
+	$labels = array(
+		'name'              => _x( 'Phases', 'taxonomy general name', 'laborda' ),
+		'singular_name'     => _x( 'Phase', 'taxonomy singular name', 'laborda' ),
+		'search_items'      => __( 'Search Phases', 'laborda' ),
+		'all_items'         => __( 'All Phases', 'laborda' ),
+		'parent_item'       => __( 'Parent Phase', 'laborda' ),
+		'parent_item_colon' => __( 'Parent Phase:', 'laborda' ),
+		'edit_item'         => __( 'Edit Phase', 'laborda' ),
+		'update_item'       => __( 'Update Phase', 'laborda' ),
+		'add_new_item'      => __( 'Add New Phase', 'laborda' ),
+		'new_item_name'     => __( 'New Phase Name', 'laborda' ),
+		'menu_name'         => __( 'Phase', 'laborda' ),
+	);
+	register_taxonomy(
+		'taxonomy',
+		'activity',
+		array(
+			'hierarchical' => true,
+			'labels' => $labels,
+			'rewrite' => array( 'slug' => 'phase' ),
+			'show_in_quick_edit' => true,
+		)
+	);
+ }
+ add_action( 'init', 'phase_taxonomy' );
