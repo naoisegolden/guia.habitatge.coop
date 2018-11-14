@@ -199,7 +199,7 @@ function create_activity_post_type() {
       'has_archive' => true,
 			'taxonomies' => array( 'category' ),
 			'menu_position' => 4,
-			'menu_icon' => 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCI+PHJlY3QgeD0iMCIgZmlsbD0ibm9uZSIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIi8+PGc+PHBhdGggZD0iTTEwIDFjNyAwIDkgMi45MSA5IDYuNVMxNyAxNCAxMCAxNHMtOS0yLjkxLTktNi41UzMgMSAxMCAxek01LjUgOUM2LjMzIDkgNyA4LjMzIDcgNy41UzYuMzMgNiA1LjUgNiA0IDYuNjcgNCA3LjUgNC42NyA5IDUuNSA5ek0xMCA5Yy44MyAwIDEuNS0uNjcgMS41LTEuNVMxMC44MyA2IDEwIDZzLTEuNS42Ny0xLjUgMS41UzkuMTcgOSAxMCA5em00LjUgMGMuODMgMCAxLjUtLjY3IDEuNS0xLjVTMTUuMzMgNiAxNC41IDYgMTMgNi42NyAxMyA3LjUgMTMuNjcgOSAxNC41IDl6TTYgMTQuNWMuODMgMCAxLjUuNjcgMS41IDEuNXMtLjY3IDEuNS0xLjUgMS41LTEuNS0uNjctMS41LTEuNS42Ny0xLjUgMS41LTEuNXptLTMgMmMuNTUgMCAxIC40NSAxIDFzLS40NSAxLTEgMS0xLS40NS0xLTEgLjQ1LTEgMS0xeiIvPjwvZz48L3N2Zz4=',
+			'menu_icon' => 'dashicons-format-aside',
     )
   );
 }
