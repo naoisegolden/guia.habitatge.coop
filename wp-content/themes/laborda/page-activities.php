@@ -3,8 +3,91 @@
 Template Name: Activities List Page
 */
 
+$categories = get_terms( array( 'taxonomy' => 'category', 'hide_empty' => true, ) );
+$phases = get_terms( array( 'taxonomy' => 'phase', 'hide_empty' => true, ) );
+
 get_header();
 ?>
+
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-12">
+    	<div class="btn-group mr-2">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+					<?php echo __( 'Filtrar per temàtica', 'laborda' ); ?>
+				</button>
+				<ul class="dropdown-menu dropdown-filter-js">
+				  <li>
+						<a href="#" class="dropdown-item" data-value="reset" tabIndex="-1">
+							<?php echo __( 'Reset', 'laborda' ); ?>
+						</a>
+					</li>
+					<div class="dropdown-divider"></div>
+					<?php foreach( $categories as $category ) : ?>
+						<li>
+							<a href="#" class="dropdown-item" data-value="<?=$category->slug?>"  tabIndex="-1">
+								<input type="checkbox" class="mr-1">
+								<?php echo $category->name ?>
+							</a>
+						</li>
+					<?php endforeach; ?>
+				</ul>
+			</div><!-- .btn-group -->
+
+			<div class="btn-group mr-2">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+					<?php echo __( 'Filtrar per fase', 'laborda' ); ?>
+				</button>
+				<ul class="dropdown-menu dropdown-filter-js">
+				  <li>
+						<a href="#" class="dropdown-item" data-value="reset" tabIndex="-1">
+							<?php echo __( 'Reset', 'laborda' ); ?>
+						</a>
+					</li>
+					<div class="dropdown-divider"></div>
+					<?php foreach( $phases as $phase ) : ?>
+						<li>
+							<a href="#" class="dropdown-item" data-value="<?=$phase->slug?>"  tabIndex="-1">
+								<input type="checkbox" class="mr-1">
+								<?php echo $phase->name ?>
+							</a>
+						</li>
+					<?php endforeach; ?>
+				</ul>
+  		</div><!-- .btn-group -->
+
+			<div class="btn-group mr-2">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+					<?php echo __( 'Ordena', 'laborda' ); ?>
+				</button>
+				<ul class="dropdown-menu dropdown-sort-js">
+				  <li>
+						<a href="#" class="dropdown-item" data-value="" tabIndex="-1">
+							<?php echo __( 'Per defecte', 'laborda' ); ?>
+						</a>
+					</li>
+				  <li>
+						<a href="#" class="dropdown-item" data-value="date" tabIndex="-1">
+							<?php echo __( 'Per data', 'laborda' ); ?>
+						</a>
+					</li>
+				  <li>
+						<a href="#" class="dropdown-item" data-value="title" tabIndex="-1">
+							<?php echo __( 'Per ordre alfabètic', 'laborda' ); ?>
+						</a>
+					</li>
+				</ul>
+  		</div><!-- .btn-group -->
+
+			<div class="btn-group float-right">
+				<button type="button" class="btn btn-default btn-round-icon btn-toggle toggle-body-js" data-toggle-value="activities-list-view"  data-toggle="button">
+					<i class="material-icons icon">apps</i>
+					<i class="material-icons icon">list</i>
+				</button>
+			</div>
+		</div>
+  </div>
+</div>
 
 <div class="container">
 	<div class="row">
@@ -12,7 +95,6 @@ get_header();
 			<main id="main" class="site-main">
 				<div class="activity-cards row js-cards">
 					<?php
-						$categories = get_terms( array( 'taxonomy' => 'category', 'hide_empty' => true, ) );
 						foreach( $categories as $category ) :
 							$loop = new WP_Query( array( 'post_type' => 'activity', 'cat' => $category->term_id ) );
 							while ( $loop->have_posts() ) :

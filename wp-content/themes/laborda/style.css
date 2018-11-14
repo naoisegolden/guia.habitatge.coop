@@ -1142,6 +1142,10 @@ svg {
 	font-weight: bold;
 }
 
+body.activities-list-view .activity-card p {
+	display: none;
+}
+
 .breadcrumbs {
 	list-style: none;
 	padding: 0;
@@ -1196,3 +1200,15 @@ svg {
 .search-form input[type="search"] {
 	width: 100% !important;
 }
+
+.btn-round-icon {
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+	padding: 7px;
+}
+
+.btn-toggle.active i:first-of-type { display: none; }
+.btn-toggle.active i:last-of-type { display: block; }
+.btn-toggle i:first-of-type { display: block; }
+.btn-toggle i:last-of-type { display: none; }
