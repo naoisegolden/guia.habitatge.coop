@@ -252,7 +252,7 @@ function phase_taxonomy() {
 		'menu_name'         => __( 'Phase', 'laborda' ),
 	);
 	register_taxonomy(
-		'taxonomy',
+		'phase',
 		'activity',
 		array(
 			'hierarchical' => true,
