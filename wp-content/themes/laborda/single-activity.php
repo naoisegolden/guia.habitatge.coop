@@ -46,10 +46,6 @@ get_header();
 
 	<div class="container container-content">
 		<div class="row">
-			<div id="post-navigation" class="col-12">
-				<?php the_post_navigation(); ?>
-			</div><!-- #post-navigation -->
-
 			<div id="comments" class="col-12">
 				<?php
 					if ( comments_open() || get_comments_number() ) :
