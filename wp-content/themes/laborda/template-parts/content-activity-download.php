@@ -1,6 +1,8 @@
 <?php
 $view_count = function_exists('pvc_get_post_views') ? pvc_get_post_views() : 0;
-$download_count = '87';
+$first_attachment_id = key(da_get_download_attachments());
+$download_link = function_exists('da_get_download_attachment_url') ? da_get_download_attachment_url( $first_attachment_id ) : '#';
+$download_count = function_exists('da_get_attachment_downloads') ? da_get_attachment_downloads( $first_attachment_id ) : 0;
 ?>
 <div class="row">
   <div class="col-auto mr-auto mb-4">
@@ -16,7 +18,7 @@ $download_count = '87';
       <i class="material-icons icon mr-1">save_alt</i>
       <span><?php echo $download_count; ?></span>
     </div>
-    <a class="btn btn-primary" href="<?php echo the_field( 'downloadable' ); ?>" download role="button">
+    <a class="btn btn-primary" href="<?php echo $download_link; ?>" download role="button">
       <?php echo __( 'Descarrega', 'laborda' ); ?>
     </a>
   </div>
