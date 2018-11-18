@@ -958,7 +958,6 @@ object {
 :root {
 	--white: white;
 	--navy: #011936;
-	--tangerine: #ff9800;
 	--blue-green: #1b929d;
 	--brownish-orange: #e3672a;
 	--brownish-purple: #723d54;
@@ -1004,10 +1003,10 @@ object {
 	--breadcrumbs-gutter: 8px;
 	--breadcrumbs-color: var(--dusty-lavender);
 
-	--carousel-button-color: var(--tangerine);
-	--carousel-button-secondary-color: rgba(255, 152, 0, 0.25);
-	--carousel-control-prev-icon-bg: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#ff9800' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
-	--carousel-control-next-icon-bg: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#ff9800' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+	--carousel-button-color: #d92650;
+	--carousel-button-secondary-color: rgba(217, 38, 80, 0.25);
+	--carousel-control-prev-icon-bg: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#d92650' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+	--carousel-control-next-icon-bg: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#d92650' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
 
 body {
