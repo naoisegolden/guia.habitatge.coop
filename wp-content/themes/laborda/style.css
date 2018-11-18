@@ -970,6 +970,7 @@ object {
 
 	--font-family: 'PT Sans', sans-serif;
 	--font-color: var(--navy);
+	--spacer: 1rem;
 
 	--header-padding: 16px;
 	--header-menu-font: bold 24px var(--font-family);
@@ -980,10 +981,14 @@ object {
 	--icon-size: 32px;
 	--small-icon-size: 14px;
 	--description-width: 200px;
-	--footer-background-color: var(--tangerine);
+	--footer-background-color: var(--navy);
 	--footer-padding: 56px;
+	--footer-color: white;
+	--footer-font-size: 24px;
 	--footer-menu-font: bold 24px var(--font-family);
 	--footer-menu-color: white;
+	--footer-logo-height: 52px;
+	--footer-logo-width: 57px;
 	--container-content-padding: 64px;
 
 	--activity-cards-margin-top: 32px;
@@ -997,9 +1002,8 @@ object {
 
 	--carousel-button-color: var(--tangerine);
 	--carousel-button-secondary-color: rgba(255, 152, 0, 0.25);
-
-		--carousel-control-prev-icon-bg: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#ff9800' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
-		--carousel-control-next-icon-bg: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#ff9800' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+	--carousel-control-prev-icon-bg: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#ff9800' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+	--carousel-control-next-icon-bg: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#ff9800' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
 
 body {
@@ -1033,7 +1037,7 @@ svg {
 }
 
 .site-title,
-.site-description {
+.site-header .site-description {
 	color: var(--font-color);
 	float: left;
 	margin: 0;
@@ -1053,7 +1057,9 @@ svg {
 	margin-top: -8px;
 }
 
-.site-description {
+.site-header .site-description,
+.site-footer .site-description {
+	display: inline-block;
 	line-height: 1rem;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -1070,7 +1076,7 @@ svg {
 }
 
 .main-navigation a {
-	color: var(--font-color);
+	color: var(--lipstick);
 	font: var(--header-menu-font);
 }
 
@@ -1092,7 +1098,6 @@ svg {
 	margin-right: var(--logo-gutter);
 }
 
-
 .jumbotron {
 	background-size: cover;
 	background-position: center center;
@@ -1100,7 +1105,26 @@ svg {
 
 .site-footer {
 	background-color: var(--footer-background-color);
+	font-size: var(--footer-font-size);
+	color: var(--footer-color);
 	padding: var(--footer-padding) 0;
+}
+
+.site-footer .site-description {
+	color: inherit;
+	font-size: 24px;
+	line-height: 28px;
+	margin-bottom: 125px;
+	width: 385px;
+}
+.site-footer .site-description:before {
+	background: url(images/logo-white.svg) center center no-repeat;
+	content: '';
+	display: inline-block;
+	float: left;
+	margin-right: var(--spacer);
+	height: var(--footer-logo-height);
+	width: var(--footer-logo-width);
 }
 
 .site-footer .menu {

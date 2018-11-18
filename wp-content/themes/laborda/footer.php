@@ -17,7 +17,16 @@
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<?php dynamic_sidebar( 'footer_left' ); ?>
+					<div class="row">
+						<div class="col">
+							<p class="site-description"><?php echo get_bloginfo( 'description', 'display' ); ?></p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<?php dynamic_sidebar( 'footer_left' ); ?>
+						</div>
+					</div>
 				</div>
 				<div class="col">
 					<?php dynamic_sidebar( 'footer_right' ); ?>
