@@ -4,12 +4,14 @@ $phases = get_the_terms( get_the_ID(), 'phase'	 );
 $groups = [$categories[0]->slug];
 if ( $phases[0] ) $groups[] = $phases[0]->slug;
 $classes = 'activity-card activity-card__' . $categories[0]->slug;
+$view_count = function_exists('pvc_get_post_views') ? pvc_get_post_views() : 0;
 ?>
 
 <div class="col-3 js-card"
 	data-groups="<?php echo esc_html(json_encode($groups)) ?>"
 	data-date="<?php the_date('Y-m-d') ?>"
 	data-title="<?php the_title() ?>"
+	data-views="<?php echo $view_count; ?>"
 >
 	<article id="activity-<?php the_ID(); ?>" <?php post_class( $classes ); ?>>
 		<a class="activity-card__body" href="<?php echo esc_url( get_permalink() ); ?>" rel="bookmark">
