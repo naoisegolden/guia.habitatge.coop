@@ -51,7 +51,7 @@
 						<?php
 						wp_nav_menu( array(
 							'theme_location' => 'menu-header',
-							'menu_id'        => 'primary-menu',
+							'menu_id' => 'primary-menu',
 						) );
 						?>
 						<a class="search-button" href="<?php echo get_permalink( get_page_by_path( 'search' ) ) ?>">

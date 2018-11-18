@@ -653,6 +653,7 @@ textarea {
 }
 
 .main-navigation a {
+	color: var(--lipstick);
 	display: block;
 	text-decoration: none;
 }
@@ -1022,6 +1023,7 @@ svg {
 }
 
 .site-header {
+	background-color: var(--background-grey);
   box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.12);
 	padding: var(--header-padding) 0;
 }
