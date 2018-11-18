@@ -22,7 +22,7 @@
   if (el) {
     window.shuffleInstance = new Shuffle(el, {
       itemSelector: '.js-card',
-      filterMode: Shuffle.FilterMode.ALL
+      filterMode: Shuffle.FilterMode.ANY
     });
   }
 
