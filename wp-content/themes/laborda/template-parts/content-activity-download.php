@@ -1,5 +1,5 @@
 <?php
-$view_count = '231';
+$view_count = function_exists('pvc_get_post_views') ? pvc_get_post_views() : 0;
 $download_count = '87';
 ?>
 <div class="row">
