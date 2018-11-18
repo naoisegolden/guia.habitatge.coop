@@ -58,11 +58,11 @@ $download_count = function_exists('da_get_attachment_downloads') ? da_get_attach
 </div>
 <div class="row">
   <div class="col-8">
-    <h3><?php echo __( 'Activitats relacionades', 'laborda' ); ?></h3>
+    <h3 class="text-left"><?php echo __( 'Activitats relacionades', 'laborda' ); ?></h3>
     <?php the_field( 'related_activities' ); ?>
   </div>
   <div class="col-4">
-    <h3><?php echo __( 'Espai', 'laborda' ); ?></h3>
+    <h3 class="text-left"><?php echo __( 'Espai', 'laborda' ); ?></h3>
     <?php the_field( 'space' ); ?>
   </div>
 </div><!-- .row -->

@@ -991,6 +991,10 @@ object {
 	--footer-logo-width: 57px;
 	--container-content-padding: 64px;
 
+	--title-font: bold 30px 'Roboto', sans-serif;
+	--title-color: var(--lipstick);
+	--title-margin: 72px;
+
 	--activity-cards-margin-top: 32px;
 	--activity-card-margin-bottom: 24px;
 	--activity-card-padding: 16px;
@@ -1238,3 +1242,38 @@ body.activities-list-view .activity-card p {
 .btn-toggle.active i:last-of-type { display: block; }
 .btn-toggle i:first-of-type { display: block; }
 .btn-toggle i:last-of-type { display: none; }
+
+.entry-title,
+.single h1,
+.single h2,
+.single h3 {
+	color: var(--title-color);
+	font: var(--title-font);
+	margin-bottom: var(--title-margin);
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.single h4 {
+	color: var(--title-color);
+	font: var(--title-font);
+	font-size: inherit;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+.single h5,
+.single button {
+	color: var(--title-color);
+	font: var(--title-font);
+	font-size: inherit;
+	text-align: left;
+}
+
+.card-header {
+	background-color: var(--white);
+}
+
+.card-body-examples {
+	background-color: var(--background-grey);
+}

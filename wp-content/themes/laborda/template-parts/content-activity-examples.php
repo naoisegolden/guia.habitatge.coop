@@ -12,6 +12,7 @@
           <div class="card mb-2">
             <div class="card-header" id="heading-<?=$index?>">
               <h5 class="mb-0">
+                <i class="material-icons icon align-middle">arrow_drop_down</i>
                 <button class="btn btn-link" data-toggle="collapse" data-target="#collapse-<?=$index?>" aria-expanded="true" aria-controls="collapse-<?=$index?>">
                   <?php echo the_sub_field('example_title'); ?>
                 </button>
@@ -30,7 +31,7 @@
       ?>
     </div><!-- #examples-accordion -->
     <div class="card">
-      <div class="card-body">
+      <div class="card-body card-body-examples">
         <h5 class="card-title"><?php echo __('Suma el teu exemple!', 'laborda'); ?></h5>
         <p class="card-text mb-0"><?php echo __('Ets una comunitat i has dut a terme aquesta activitat? Envia’ns l’exemple del resultat a <a href="mailto:guia@habitatge.coop">guia@habitatge.coop</a> i ho  afegirem a la llista', 'laborda') ?></p>
       </div>

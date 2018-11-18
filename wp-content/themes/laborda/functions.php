@@ -120,7 +120,7 @@ add_action( 'widgets_init', 'laborda_widgets_init' );
  * Enqueue scripts and styles.
  */
 function laborda_scripts() {
-	wp_enqueue_style( 'fonts', 'https://fonts.googleapis.com/css?family=PT+Sans|Material+Icons' );
+	wp_enqueue_style( 'fonts', 'https://fonts.googleapis.com/css?family=PT+Sans|Material+Icons|Roboto' );
 	wp_enqueue_style( 'bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css' );
 	wp_enqueue_style( 'laborda-style', get_stylesheet_uri() );
 
