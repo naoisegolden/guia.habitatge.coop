@@ -44,6 +44,10 @@ get_header();
 		<?php get_template_part( 'template-parts/content-activity-examples' ); ?>
 	</div><!-- .container -->
 
+	<div class="container container-content">
+		<?php get_template_part( 'template-parts/content-activity-more-info' ); ?>
+	</div><!-- .container -->
+
 	<?php
 		if ( comments_open() || get_comments_number() ) :
 	?>
