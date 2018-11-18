@@ -44,17 +44,19 @@ get_header();
 		<?php get_template_part( 'template-parts/content-activity-examples' ); ?>
 	</div><!-- .container -->
 
-	<div class="container container-content">
-		<div class="row">
-			<div id="comments" class="col-12">
-				<?php
-					if ( comments_open() || get_comments_number() ) :
-						comments_template();
-					endif;
-				?>
-			</div><!-- #comments -->
-		</div><!-- .row -->
-	</div><!-- .container -->
+	<?php
+		if ( comments_open() || get_comments_number() ) :
+	?>
+		<div class="container container-content">
+			<div class="row">
+				<div id="comments" class="col-12">
+					<?php	comments_template(); ?>
+				</div><!-- #comments -->
+			</div><!-- .row -->
+		</div><!-- .container -->
+	<?php
+		endif;
+	?>
 <?php
 	endwhile; // End of the loop.
 ?>
