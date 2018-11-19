@@ -971,7 +971,7 @@ object {
 	--primary-color-lighter: #E15173;
 	--primary-color-darker: #AE1E40;
 
-	--font-family: 'PT Sans', sans-serif;
+	--font-family: 'Roboto', sans-serif;
 	--font-color: var(--navy);
 	--spacer: 1rem;
 
@@ -994,7 +994,7 @@ object {
 	--footer-logo-width: 57px;
 	--container-content-padding: 64px;
 
-	--title-font: bold 30px 'Roboto', sans-serif;
+	--title-font: bold 30px 'Roboto Condensed', sans-serif;
 	--title-color: var(--primary-color);
 	--title-margin: 72px;
 
@@ -1247,6 +1247,7 @@ body.activities-list-view .activity-card p {
 .btn-toggle i:last-of-type { display: none; }
 
 .entry-title,
+.page-title,
 .single h1,
 .single h2,
 .single h3 {
