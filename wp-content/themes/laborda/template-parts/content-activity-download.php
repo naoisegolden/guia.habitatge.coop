@@ -6,15 +6,15 @@ $download_count = function_exists('da_get_attachment_downloads') ? da_get_attach
 ?>
 <div class="row">
   <div class="col-auto mr-auto mb-4">
-    <a href="#" class="social-button"></a>
-    <a href="#" class="social-button"></a>
+    <a href="#" class="social-button mt-4"></a>
+    <a href="#" class="social-button mt-4"></a>
   </div>
   <div class="col-auto mb-4">
-    <div class="download-statistics mr-2 mt-2">
+    <div class="download-statistics mr-4 mt-4">
       <i class="material-icons icon mr-1">visibility</i>
       <span><?php echo $view_count; ?></span>
     </div>
-    <div class="download-statistics mr-4 mt-2">
+    <div class="download-statistics mr-5 mt-4">
       <i class="material-icons icon mr-1">save_alt</i>
       <span><?php echo $download_count; ?></span>
     </div>

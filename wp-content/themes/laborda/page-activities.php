@@ -13,7 +13,7 @@ get_header();
   <div class="row">
     <div class="col-12">
     	<div class="btn-group mr-2">
-        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+        <button type="button" class="btn btn-default btn-filter dropdown-toggle" data-toggle="dropdown">
 					<?php echo __( 'Filtrar per temàtica', 'laborda' ); ?>
 				</button>
 				<ul class="dropdown-menu dropdown-filter-js">
@@ -35,7 +35,7 @@ get_header();
 			</div><!-- .btn-group -->
 
 			<div class="btn-group mr-2">
-        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+        <button type="button" class="btn btn-default btn-filter dropdown-toggle" data-toggle="dropdown">
 					<?php echo __( 'Filtrar per fase', 'laborda' ); ?>
 				</button>
 				<ul class="dropdown-menu dropdown-filter-js">
@@ -57,7 +57,7 @@ get_header();
   		</div><!-- .btn-group -->
 
 			<div class="btn-group mr-2">
-        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+        <button type="button" class="btn btn-default btn-filter dropdown-toggle" data-toggle="dropdown">
 					<?php echo __( 'Ordena', 'laborda' ); ?>
 				</button>
 				<ul class="dropdown-menu dropdown-sort-js">

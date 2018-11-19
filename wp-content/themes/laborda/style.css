@@ -972,35 +972,45 @@ object {
 	--primary-color-darker: #AE1E40;
 
 	--font-family: 'Roboto', sans-serif;
+	--font-family-secondary: 'Roboto Condensed', sans-serif;
 	--font-color: var(--navy);
 	--spacer: 1rem;
 
 	--header-padding: 16px;
-	--header-menu-font: bold 24px var(--font-family);
+	--header-menu-font: bold 36px var(--font-family-secondary);
 	--header-menu-gutter: 32px;
+	--container-content-padding: 64px;
+
 	--logo-gutter: 16px;
 	--logo-height: 40px;
 	--logo-width: 117px;
-	--icon-size: 32px;
-	--small-icon-size: 14px;
-	--description-width: 200px;
+	--icon-size: 42px;
+	--small-icon-size: 24px;
+
 	--footer-background-color: var(--navy);
 	--footer-padding: 56px;
 	--footer-color: white;
-	--footer-font-size: 24px;
 	--footer-menu-font: bold 24px var(--font-family);
 	--footer-menu-color: white;
 	--footer-logo-height: 52px;
 	--footer-logo-width: 57px;
-	--container-content-padding: 64px;
 
-	--title-font: bold 30px 'Roboto Condensed', sans-serif;
+	--title-font: bold 30px var(--font-family-secondary);
 	--title-color: var(--primary-color);
 	--title-margin: 42px;
+
+	--base-font-size: 24px;
+	--button-font-size: 32px;
+	--input-font-size: var(--base-font-size);
+
+	--input-padding: 16px 24px;
+	--button-font-family: var(--font-family-secondary);
 
 	--activity-cards-margin-top: 32px;
 	--activity-card-margin-bottom: 24px;
 	--activity-card-padding: 16px;
+	--activity-title-font-size: 24px;
+	--activity-body-font-size: 16px;
 	--border-radius: 5px;
 
 	--breadcrumbs-top-margin: 24px;
@@ -1015,6 +1025,7 @@ object {
 
 body {
 	font-family: var(--font-family);
+	font-size: var(--base-font-size);
 }
 
 svg {
@@ -1028,6 +1039,12 @@ a {
 	color: var(--primary-color);
 }
 
+.form-control,
+input {
+	font-size: var(--input-font-size);
+	height: auto;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -1035,7 +1052,7 @@ input[type="password"],
 input[type="search"],
 input[type="number"],
 input[type="tel"] {
-	padding: 12px;
+	padding: var(--input-padding);
 }
 
 .container-jumbo {
@@ -1083,8 +1100,9 @@ input[type="tel"] {
 	display: inline-block;
 	line-height: 1rem;
 	text-transform: uppercase;
-	font-weight: bold;
-	width: var(--description-width);
+	font: var(--title-font);
+	font-size: 24px;
+	line-height: 28px;
 }
 
 .main-navigation {
@@ -1109,6 +1127,7 @@ input[type="tel"] {
 
 .search-button .icon {
 	font-size: var(--icon-size);
+	font-weight: bold;
 }
 
 .search-result .entry-title {
@@ -1142,15 +1161,12 @@ input[type="tel"] {
 
 .site-footer {
 	background-color: var(--footer-background-color);
-	font-size: var(--footer-font-size);
 	color: var(--footer-color);
 	padding: var(--footer-padding) 0;
 }
 
 .site-footer .site-description {
 	color: inherit;
-	font-size: 24px;
-	line-height: 28px;
 	margin-bottom: 125px;
 	width: 385px;
 }
@@ -1191,7 +1207,8 @@ input[type="tel"] {
 
 .activity-card__body {
 	display: block;
-	padding: var(--activity-card-padding)
+	font-size: var(--activity-body-font-size);
+	padding: var(--activity-card-padding);
 }
 
 .activity-card a,
@@ -1201,7 +1218,7 @@ input[type="tel"] {
 }
 
 .activity-card h2 {
-	font-size: 24px;
+	font-size: var(--activity-title-font-size);
 	font-weight: bold;
 }
 
@@ -1234,10 +1251,6 @@ body.activities-list-view .activity-card p {
 	float: left;
 }
 
-.download-statistics .icon {
-	font-size: inherit;
-}
-
 .download-statistics span {
 	vertical-align: text-bottom;
 }
@@ -1266,15 +1279,32 @@ body.activities-list-view .activity-card p {
 
 .btn-round-icon {
 	border-radius: 50%;
-	height: 40px;
-	width: 40px;
-	padding: 7px;
+	height: 54px;
+	width: 54px;
+	padding: 13px !important;
+}
+.btn-round-icon .icon {
+	font-size: 28px;
 }
 
 .btn-toggle.active i:first-of-type { display: none; }
 .btn-toggle.active i:last-of-type { display: block; }
 .btn-toggle i:first-of-type { display: block; }
 .btn-toggle i:last-of-type { display: none; }
+
+.btn.btn-filter {
+	text-transform: none;
+	font-size: 24px;
+	font-weight: normal;
+	padding: 12px 18px;
+}
+
+.dropdown-item {
+	font-size: var(--activity-title-font-size);
+}
+.dropdown-item input[type="checkbox"] {
+	height: 17px;
+}
 
 .entry-title,
 .page-title,
@@ -1313,9 +1343,12 @@ body.activities-list-view .activity-card p {
 	background-color: var(--background-grey);
 }
 
-.download-button {
-	text-transform: uppercase;
+.btn {
+	font-size: var(--button-font-size);
 	font-weight: bold;
+	font-family: var(--button-font-family);
+	padding: var(--input-padding);
+	text-transform: uppercase;
 }
 
 .btn-primary {
