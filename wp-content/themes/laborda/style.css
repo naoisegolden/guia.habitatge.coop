@@ -653,7 +653,7 @@ textarea {
 }
 
 .main-navigation a {
-	color: var(--lipstick);
+	color: var(--primary-color);
 	display: block;
 	text-decoration: none;
 }
@@ -967,6 +967,10 @@ object {
 	--icon-grey: #9b9b9b;
 	--icon-background-grey: #f5f5f5;
 
+	--primary-color: var(--lipstick);
+	--primary-color-lighter: #E15173;
+	--primary-color-darker: #AE1E40;
+
 	--font-family: 'PT Sans', sans-serif;
 	--font-color: var(--navy);
 	--spacer: 1rem;
@@ -991,7 +995,7 @@ object {
 	--container-content-padding: 64px;
 
 	--title-font: bold 30px 'Roboto', sans-serif;
-	--title-color: var(--lipstick);
+	--title-color: var(--primary-color);
 	--title-margin: 72px;
 
 	--activity-cards-margin-top: 32px;
@@ -1003,7 +1007,7 @@ object {
 	--breadcrumbs-gutter: 8px;
 	--breadcrumbs-color: var(--dusty-lavender);
 
-	--carousel-button-color: #d92650;
+	--carousel-button-color: var(--primary-color);
 	--carousel-button-secondary-color: rgba(217, 38, 80, 0.25);
 	--carousel-control-prev-icon-bg: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#d92650' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
 	--carousel-control-next-icon-bg: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#d92650' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
@@ -1079,7 +1083,7 @@ svg {
 }
 
 .main-navigation a {
-	color: var(--lipstick);
+	color: var(--primary-color);
 	font: var(--header-menu-font);
 }
 
@@ -1275,4 +1279,22 @@ body.activities-list-view .activity-card p {
 
 .card-body-examples {
 	background-color: var(--background-grey);
+}
+
+.download-button {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.btn-primary {
+	background-color: var(--primary-color);
+	border-color: var(--primary-color);
+}
+.btn-primary:hover {
+	background-color: var(--primary-color-lighter);
+	border-color: var(--primary-color-lighter);
+}
+.btn-primary:active {
+	background-color: var(--primary-color-darker) !important;
+	border-color: var(--primary-color-darker) !important;
 }

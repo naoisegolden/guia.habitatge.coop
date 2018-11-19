@@ -18,7 +18,7 @@ $download_count = function_exists('da_get_attachment_downloads') ? da_get_attach
       <i class="material-icons icon mr-1">save_alt</i>
       <span><?php echo $download_count; ?></span>
     </div>
-    <a class="btn btn-primary" href="<?php echo $download_link; ?>" download role="button">
+    <a class="btn btn-primary download-button" href="<?php echo $download_link; ?>" download role="button">
       <?php echo __( 'Descarrega', 'laborda' ); ?>
     </a>
   </div>
