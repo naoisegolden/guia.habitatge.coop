@@ -996,7 +996,7 @@ object {
 
 	--title-font: bold 30px 'Roboto Condensed', sans-serif;
 	--title-color: var(--primary-color);
-	--title-margin: 72px;
+	--title-margin: 42px;
 
 	--activity-cards-margin-top: 32px;
 	--activity-card-margin-bottom: 24px;
@@ -1022,6 +1022,20 @@ svg {
 	/* Make sure images are scaled correctly. */
 	max-width: 100%;
 	/* Adhere to container width. */
+}
+
+a {
+	color: var(--primary-color);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"] {
+	padding: 12px;
 }
 
 .container-jumbo {
@@ -1095,6 +1109,22 @@ svg {
 
 .search-button .icon {
 	font-size: var(--icon-size);
+}
+
+.search-result .entry-title {
+	text-transform: none;
+	text-align: left;
+	margin-bottom: 16px;
+}
+.search-result .entry-title a { color: var(--primary-color); }
+.search-result.economia .entry-title a { color: var(--blue-green); }
+.search-result.habitar .entry-title a { color: var(--brownish-orange); }
+.search-result.juridica .entry-title a { color: var(--brownish-purple); }
+.search-result.social .entry-title a { color: var(--lipstick); }
+
+.search-results-legend {
+	color: var(--icon-grey);
+	font-style: italic;
 }
 
 .social-button {
@@ -1254,6 +1284,7 @@ body.activities-list-view .activity-card p {
 	color: var(--title-color);
 	font: var(--title-font);
 	margin-bottom: var(--title-margin);
+	margin-top: var(--title-margin);
 	text-align: center;
 	text-transform: uppercase;
 }

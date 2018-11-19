@@ -20,7 +20,7 @@ get_header();
 					<?php echo __( 'Search Results', 'laborda' ) ?>
 				</h1>
 				<?php get_search_form(); ?>
-				<p class="mt-3">
+				<p class="mt-3 search-results-legend">
 					<?php printf( esc_html__( 'Search Results for "%s"', 'laborda' ), '<span>' . get_search_query() . '</span>' ); ?>
 				</p>
 			</header><!-- .page-header -->
