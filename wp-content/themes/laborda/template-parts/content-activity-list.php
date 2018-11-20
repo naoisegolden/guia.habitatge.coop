@@ -7,7 +7,7 @@ $classes = 'activity-card activity-card__' . $categories[0]->slug;
 $view_count = function_exists('pvc_get_post_views') ? pvc_get_post_views() : 0;
 ?>
 
-<div class="col-3 js-card"
+<div class="col-6 col-md-4 col-lg-3 js-card"
 	data-groups="<?php echo esc_html(json_encode($groups)) ?>"
 	data-date="<?php the_date('Y-m-d') ?>"
 	data-title="<?php the_title() ?>"
