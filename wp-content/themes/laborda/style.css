@@ -1345,6 +1345,15 @@ body.activities-list-view .activity-card p {
 	text-align: left;
 }
 
+.not-found .page-header:after {
+	background: url(images/graphic-arch.svg) no-repeat;
+	content: '';
+	display: block;
+	height: 85px;
+	width: 215px;
+	margin: 54px auto 96px;
+}
+
 .card-body-examples {
 	background-color: var(--background-grey);
 }
