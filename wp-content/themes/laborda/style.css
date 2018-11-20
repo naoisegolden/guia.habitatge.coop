@@ -1340,13 +1340,16 @@ body.activities-list-view .activity-card p {
 	text-align: left;
 }
 
-.card-header {
-	background-color: var(--white);
-}
-
 .card-body-examples {
 	background-color: var(--background-grey);
 }
+
+.card-borderless {
+	border: none;
+}
+
+
+/* Bootstrap overwrites */
 
 .btn {
 	font-size: var(--button-font-size);
@@ -1367,4 +1370,8 @@ body.activities-list-view .activity-card p {
 .btn-primary:active {
 	background-color: var(--primary-color-darker) !important;
 	border-color: var(--primary-color-darker) !important;
+}
+
+.card-header {
+	background-color: var(--white);
 }

@@ -6,7 +6,7 @@
       if( have_rows('tips') ):
         while ( have_rows('tips') ) : the_row();
         ?>
-          <div class="card">
+          <div class="card card-borderless">
             <div class="card-body">
               <h4 class="card-title"><?php echo the_sub_field('tip_title'); ?></h4>
               <div class="card-text">
