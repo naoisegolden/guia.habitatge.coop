@@ -1304,6 +1304,11 @@ body.activities-list-view .activity-card p {
 	padding: 12px 18px;
 }
 
+.btn.btn-tiny {
+	font-size: 12px;
+	padding: 6px 12px;
+}
+
 .dropdown-item {
 	font-size: var(--activity-title-font-size);
 }
