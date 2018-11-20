@@ -3,20 +3,12 @@ get_header();
 ?>
 
 <?php
-	$category = get_the_category()[0];
-
 	while ( have_posts() ) :
 		the_post();
 ?>
 	<div class="container">
 		<div class="row">
-			<div id="breadcrumbs" class="col">
-				<ul class="breadcrumbs">
-					<li class="breadcrumbs__crumb"><?php echo __('Activities', 'laborda'); ?></li>
-					<li class="breadcrumbs__crumb"><?php echo $category->name; ?></li>
-					<li class="breadcrumbs__crumb"><?php the_title(); ?></li>
-				</ul>
-			</div>
+			<?php get_template_part( 'template-parts/content-activity-breadcrumbs' ); ?>
 		</div><!-- .row -->
 	</div><!-- .container -->
 

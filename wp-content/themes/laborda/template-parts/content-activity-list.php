@@ -1,6 +1,6 @@
 <?php
 $categories = get_the_category();
-$phases = get_the_terms( get_the_ID(), 'phase'	 );
+$phases = get_the_terms( get_the_ID(), 'phase' );
 $groups = [$categories[0]->slug];
 if ( $phases[0] ) $groups[] = $phases[0]->slug;
 $classes = 'activity-card activity-card__' . $categories[0]->slug;
