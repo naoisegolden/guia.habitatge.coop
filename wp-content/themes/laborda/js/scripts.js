@@ -67,22 +67,28 @@
   $('.dropdown-sort-js a').on('click', function(event) {
     const $target = $(event.currentTarget);
     const value = $target.attr('data-value');
-    function sortByDate(element) {
-      return element.getAttribute('data-date');
-    }
     function sortByTitle(element) {
       return element.getAttribute('data-title').toLowerCase();
     }
+    function sortByCategory(element) {
+      return element.getAttribute('data-category');
+    }
+    function sortByPhase(element) {
+      return element.getAttribute('data-phase');
+    }
     let options;
 
-    if (value === 'date') {
-      options = {
-        reverse: true,
-        by: sortByDate
-      };
-    } else if (value === 'title') {
+    if (value === 'title') {
       options = {
         by: sortByTitle
+      };
+    } else if (value === 'category') {
+      options = {
+        by: sortByCategory
+      };
+    } else if (value === 'phase') {
+      options = {
+        by: sortByPhase
       };
     } else {
       options = {};

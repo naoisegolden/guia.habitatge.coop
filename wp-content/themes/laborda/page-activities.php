@@ -61,14 +61,14 @@ get_header();
 					<?php echo __( 'Ordena', 'laborda' ); ?>
 				</button>
 				<ul class="dropdown-menu dropdown-sort-js">
+          <li>
+            <a href="#" class="dropdown-item" data-value="category" tabIndex="-1">
+              <?php echo __( 'Per temàtica', 'laborda' ); ?>
+            </a>
+          </li>
 				  <li>
-						<a href="#" class="dropdown-item" data-value="" tabIndex="-1">
-							<?php echo __( 'Per defecte', 'laborda' ); ?>
-						</a>
-					</li>
-				  <li>
-						<a href="#" class="dropdown-item" data-value="date" tabIndex="-1">
-							<?php echo __( 'Per data', 'laborda' ); ?>
+						<a href="#" class="dropdown-item" data-value="phase" tabIndex="-1">
+							<?php echo __( 'Per fase', 'laborda' ); ?>
 						</a>
 					</li>
 				  <li>
