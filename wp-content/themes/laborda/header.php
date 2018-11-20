@@ -38,12 +38,7 @@
 						?>
 						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 						<?php
-					endif;
-					$laborda_description = get_bloginfo( 'description', 'display' );
-					if ( $laborda_description || is_customize_preview() ) :
-						?>
-						<p class="site-description"><?php echo $laborda_description; /* WPCS: xss ok. */ ?></p>
-					<?php endif; ?>
+					endif; ?>
 				</div><!-- .col -->
 				<div class="col">
 					<nav id="site-navigation" class="main-navigation">

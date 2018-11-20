@@ -1074,8 +1074,7 @@ input[type="tel"] {
 	align-items: center;
 }
 
-.site-title,
-.site-header .site-description {
+.site-title {
 	color: var(--font-color);
 	float: left;
 	margin: 0;
@@ -1093,16 +1092,6 @@ input[type="tel"] {
   text-indent: 100%;
   white-space: nowrap;
 	margin-top: -8px;
-}
-
-.site-header .site-description,
-.site-footer .site-description {
-	display: inline-block;
-	line-height: 1rem;
-	text-transform: uppercase;
-	font: var(--title-font);
-	font-size: 24px;
-	line-height: 28px;
 }
 
 .main-navigation {
@@ -1169,6 +1158,12 @@ input[type="tel"] {
 	color: inherit;
 	margin-bottom: 125px;
 	width: 385px;
+	display: inline-block;
+	line-height: 1rem;
+	text-transform: uppercase;
+	font: var(--title-font);
+	font-size: 24px;
+	line-height: 28px;
 }
 .site-footer .site-description:before {
 	background: url(images/logo-white.svg) center center no-repeat;
