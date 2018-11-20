@@ -25,7 +25,7 @@ get_header();
 					<div class="dropdown-divider"></div>
 					<?php foreach( $categories as $category ) : ?>
 						<li>
-							<a href="#" class="dropdown-item" data-value="<?=$category->slug?>"  tabIndex="-1">
+							<a href="#" class="dropdown-item <?=$category->slug?>" data-value="<?=$category->slug?>"  tabIndex="-1">
 								<input type="checkbox" class="mr-1">
 								<?php echo $category->name ?>
 							</a>

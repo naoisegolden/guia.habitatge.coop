@@ -1311,6 +1311,11 @@ body.activities-list-view .activity-card p {
 	height: 17px;
 }
 
+.dropdown-item.economia { color: var(--blue-green); }
+.dropdown-item.habitar { color: var(--brownish-orange); }
+.dropdown-item.juridica { color: var(--brownish-purple); }
+.dropdown-item.social { color: var(--lipstick); }
+
 .entry-title,
 .page-title,
 .single h1,
