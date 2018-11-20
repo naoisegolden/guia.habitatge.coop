@@ -1081,9 +1081,7 @@ input[type="tel"] {
 	margin: 0;
 }
 
-
 .site-title a {
-	margin-right: var(--logo-gutter);
   display: block;
   background: url(images/logo.svg) center center no-repeat;
   background-size: contain;
@@ -1093,6 +1091,11 @@ input[type="tel"] {
   text-indent: 100%;
   white-space: nowrap;
 	margin-top: -8px;
+}
+
+.site-title-badge {
+	font-size: 12px;
+	vertical-align: top;
 }
 
 .main-navigation {

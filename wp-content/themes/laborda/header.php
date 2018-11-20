@@ -39,6 +39,7 @@
 						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 						<?php
 					endif; ?>
+					<span class="badge badge-pill badge-dark site-title-badge">BETA</span>
 				</div><!-- .col -->
 				<div class="col">
 					<nav id="site-navigation" class="main-navigation">
