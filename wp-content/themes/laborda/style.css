@@ -1009,6 +1009,7 @@ object {
 	--activity-cards-margin-top: 32px;
 	--activity-card-margin-bottom: 24px;
 	--activity-card-padding: 16px;
+	--activity-entry-title-font-size: 48px;
 	--activity-title-font-size: 24px;
 	--activity-body-font-size: 16px;
 	--border-radius: 5px;
@@ -1219,6 +1220,12 @@ input[type="tel"] {
 
 body.activities-list-view .activity-card p {
 	display: none;
+}
+
+.activity-template-default .entry-title {
+	font-size: var(--activity-entry-title-font-size);
+	text-align: left;
+	text-transform: none;
 }
 
 .breadcrumbs {
