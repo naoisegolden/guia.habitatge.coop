@@ -1198,7 +1198,7 @@ input[type="tel"] {
 
 .extra-footer-top,
 .extra-footer-bottom {
-	padding: 14px 0 10px;
+	padding: 12px;
 	font-size: var(--extra-footer-font-size);
 }
 
