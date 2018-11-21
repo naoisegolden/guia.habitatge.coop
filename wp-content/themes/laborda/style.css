@@ -978,6 +978,17 @@ object {
 	--font-color: var(--navy);
 	--spacer: 1rem;
 
+	--base-font-size: 20px;
+	--button-font-size: 24px;
+	--input-font-size: var(--base-font-size);
+
+	--input-padding: 16px 24px;
+	--button-font-family: var(--font-family-secondary);
+
+	--title-font: bold 30px var(--font-family-secondary);
+	--title-color: var(--primary-color);
+	--title-margin: 42px;
+
 	--header-padding: 16px;
 	--header-menu-font: bold 30px var(--font-family-secondary);
 	--header-menu-gutter: 30px;
@@ -999,17 +1010,6 @@ object {
 	--extra-footer-font-size: 20px;
 	--extra-footer-color: var(--icon-grey);
 	--extra-footer-bg-color: var(--icon-background-grey-darker);
-
-	--title-font: bold 30px var(--font-family-secondary);
-	--title-color: var(--primary-color);
-	--title-margin: 42px;
-
-	--base-font-size: 20px;
-	--button-font-size: 24px;
-	--input-font-size: var(--base-font-size);
-
-	--input-padding: 16px 24px;
-	--button-font-family: var(--font-family-secondary);
 
 	--activity-cards-margin-top: 32px;
 	--activity-card-margin-bottom: 24px;
@@ -1151,11 +1151,6 @@ input[type="tel"] {
 	width: var(--icon-size);
 	display: inline-block;
 	text-align: center;
-}
-
-.jumbotron {
-	background-size: cover;
-	background-position: center center;
 }
 
 .site-footer {
@@ -1417,4 +1412,9 @@ body.activities-list-view .activity-card p {
 
 .card-header {
 	background-color: var(--white);
+}
+
+.jumbotron {
+	background-size: cover;
+	background-position: center center;
 }
