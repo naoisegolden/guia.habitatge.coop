@@ -1198,13 +1198,12 @@ input[type="tel"] {
 
 .extra-footer-top,
 .extra-footer-bottom {
-	padding: 12px;
+	padding: 14px 0 10px;
 	font-size: var(--extra-footer-font-size);
 }
 
 .extra-footer-bottom {
 	color: var(--extra-footer-color);
-	line-height: 14px;
 	background-color: var(--extra-footer-bg-color);;
 }
 
@@ -1418,22 +1417,4 @@ body.activities-list-view .activity-card p {
 
 .card-header {
 	background-color: var(--white);
-}
-
-.cc-icon {
-	width: 26px;
-	height: 26px;
-	background: no-repeat;
-	background-size: contain;
-	display: inline-block
-}
-
-.cc-icon.cc-cc {
-	background-image: url(images/cc-cc.svg);
-}
-.cc-icon.cc-by {
-	background-image: url(images/cc-by.svg);
-}
-.cc-icon.cc-sa {
-	background-image: url(images/cc-sa.svg);
 }

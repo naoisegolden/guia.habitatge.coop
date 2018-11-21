@@ -122,6 +122,8 @@ add_action( 'widgets_init', 'laborda_widgets_init' );
 function laborda_scripts() {
 	wp_enqueue_style( 'fonts', 'https://fonts.googleapis.com/css?family=Material+Icons|Roboto|Roboto+Condensed' );
 	wp_enqueue_style( 'bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css' );
+	wp_enqueue_style( 'font-awesome-brands', 'https://use.fontawesome.com/releases/v5.5.0/css/brands.css' );
+	wp_enqueue_style( 'font-awesome', 'https://use.fontawesome.com/releases/v5.5.0/css/fontawesome.css' );
 	wp_enqueue_style( 'laborda-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'laborda-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
