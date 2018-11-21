@@ -966,6 +966,7 @@ object {
 	--background-grey: #f9f9f9;
 	--icon-grey: #9b9b9b;
 	--icon-background-grey: #f5f5f5;
+	--icon-background-grey-darker: #e2e2e2;
 
 	--primary-color: var(--lipstick);
 	--primary-color-lighter: #E15173;
@@ -994,6 +995,10 @@ object {
 	--footer-menu-color: white;
 	--footer-logo-height: 52px;
 	--footer-logo-width: 57px;
+
+	--extra-footer-font-size: 20px;
+	--extra-footer-color: var(--icon-grey);
+	--extra-footer-bg-color: var(--icon-background-grey-darker);
 
 	--title-font: bold 30px var(--font-family-secondary);
 	--title-color: var(--primary-color);
@@ -1188,6 +1193,14 @@ input[type="tel"] {
 .site-footer .menu a {
 	font: var(--footer-menu-font);
 	color: var(--footer-menu-color);
+}
+
+.extra-footer {
+	font-size: var(--extra-footer-font-size);
+	color: var(--extra-footer-color);
+	background-color: var(--extra-footer-bg-color);
+	padding: 12px;
+	line-height: 14px;
 }
 
 .activity-cards {
@@ -1393,4 +1406,22 @@ body.activities-list-view .activity-card p {
 
 .card-header {
 	background-color: var(--white);
+}
+
+.cc-icon {
+	width: 26px;
+	height: 26px;
+	background: no-repeat;
+	background-size: contain;
+	display: inline-block
+}
+
+.cc-icon.cc-cc {
+	background-image: url(images/cc-cc.svg);
+}
+.cc-icon.cc-by {
+	background-image: url(images/cc-by.svg);
+}
+.cc-icon.cc-sa {
+	background-image: url(images/cc-sa.svg);
 }

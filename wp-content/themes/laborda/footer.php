@@ -34,6 +34,17 @@
 			</div><!-- .row -->
 		</div><!-- .container -->
 	</footer><!-- #colophon -->
+	<?php if ( is_active_sidebar( 'footer_extra' ) ) : ?>
+		<div class="extra-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<?php dynamic_sidebar( 'footer_extra' ); ?>
+					</div>
+				</div>
+			</div>
+		</div>
+	<?php endif; ?>
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
