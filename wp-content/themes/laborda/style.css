@@ -973,16 +973,17 @@ object {
 	--primary-color-lighter: #E15173;
 	--primary-color-darker: #AE1E40;
 
+	--base-font-size: 20px;
 	--font-family: 'Roboto', sans-serif;
 	--font-family-secondary: 'Roboto Condensed', sans-serif;
 	--font-color: var(--navy);
 	--spacer: 1rem;
 
-	--base-font-size: 20px;
-	--button-font-size: 24px;
 	--input-font-size: var(--base-font-size);
-
 	--input-padding: 16px 24px;
+
+	--button-font-size: 24px;
+	--button-padding: 12px 32px;
 	--button-font-family: var(--font-family-secondary);
 
 	--title-font: bold 30px var(--font-family-secondary);
@@ -1387,13 +1388,25 @@ body.activities-list-view .activity-card p {
 	border: none;
 }
 
+.jumbo-help__title {
+	color: var(--navy);
+	font-family: var(--font-family-secondary);
+	font-size: 48px;
+	font-weight: bold;
+}
+
+.jumbo-help__thumbnail {
+	border: 2px solid var(--primary-color);
+}
+
 /* Bootstrap overwrites */
 
 .btn {
 	font-size: var(--button-font-size);
 	font-weight: bold;
 	font-family: var(--button-font-family);
-	padding: var(--input-padding);
+	line-height: normal;
+	padding: var(--button-padding);
 	text-transform: uppercase;
 }
 
