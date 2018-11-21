@@ -979,8 +979,8 @@ object {
 	--spacer: 1rem;
 
 	--header-padding: 16px;
-	--header-menu-font: bold 36px var(--font-family-secondary);
-	--header-menu-gutter: 32px;
+	--header-menu-font: bold 30px var(--font-family-secondary);
+	--header-menu-gutter: 30px;
 	--container-content-padding: 64px;
 
 	--logo-height: 40px;
@@ -1004,8 +1004,8 @@ object {
 	--title-color: var(--primary-color);
 	--title-margin: 42px;
 
-	--base-font-size: 24px;
-	--button-font-size: 32px;
+	--base-font-size: 20px;
+	--button-font-size: 24px;
 	--input-font-size: var(--base-font-size);
 
 	--input-padding: 16px 24px;
