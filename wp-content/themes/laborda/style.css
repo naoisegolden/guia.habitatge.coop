@@ -983,7 +983,6 @@ object {
 	--header-menu-gutter: 32px;
 	--container-content-padding: 64px;
 
-	--logo-gutter: 16px;
 	--logo-height: 40px;
 	--logo-width: 117px;
 	--icon-size: 42px;
@@ -1147,10 +1146,11 @@ input[type="tel"] {
 
 .social-button {
 	background-color: var(--icon-background-grey);
+	color: var(--icon-grey);
 	height: var(--icon-size);
 	width: var(--icon-size);
 	display: inline-block;
-	margin-right: var(--logo-gutter);
+	text-align: center;
 }
 
 .jumbotron {

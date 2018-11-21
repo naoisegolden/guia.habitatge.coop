@@ -3,11 +3,26 @@ $view_count = function_exists('pvc_get_post_views') ? pvc_get_post_views() : 0;
 $first_attachment_id = function_exists('da_get_download_attachments') ? key(da_get_download_attachments()) : 0;
 $download_link = function_exists('da_get_download_attachment_url') ? da_get_download_attachment_url( $first_attachment_id ) : '#';
 $download_count = function_exists('da_get_attachment_downloads') ? da_get_attachment_downloads( $first_attachment_id ) : 0;
+
+$title = get_the_title();
+$permalink = get_permalink();
+$variables = array( '$title', '$permalink' );
+$values = array( $title, $permalink );
+
+$twitter_post = get_field( 'twitter_post' );
+$interpolated = str_replace( $variables, $values, $twitter_post );
+$twitter_link = 'https://twitter.com/home?status=' . urlencode( $interpolated );
+
+$facebook_link = 'https://www.facebook.com/sharer/sharer.php?u=' . $permalink;
 ?>
 <div class="row">
   <div class="col-auto mr-auto mb-4">
-    <a href="#" class="social-button mt-4"></a>
-    <a href="#" class="social-button mt-4"></a>
+    <a href="<?php echo $facebook_link; ?>" target="_blank" class="social-button mt-4 mr-2">
+      <i class="fab fa-facebook-f align-text-bottom"></i>
+    </a>
+    <a href="<?php echo $twitter_link; ?>" target="_blank" class="social-button mt-4 mr-2">
+      <i class="fab fa-twitter align-text-bottom"></i>
+    </a>
   </div>
   <div class="col-auto mb-4">
     <div class="download-statistics mr-4 mt-4">
