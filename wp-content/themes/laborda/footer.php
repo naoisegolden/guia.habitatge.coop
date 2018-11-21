@@ -13,6 +13,17 @@
 
 	</div><!-- #content -->
 
+	<?php if ( is_active_sidebar( 'footer_extra_top' ) ) : ?>
+		<div class="extra-footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<?php dynamic_sidebar( 'footer_extra_top' ); ?>
+					</div>
+				</div>
+			</div>
+		</div>
+	<?php endif; ?>
 	<footer id="colophon" class="site-footer">
 		<div class="container">
 			<div class="row">
@@ -34,12 +45,12 @@
 			</div><!-- .row -->
 		</div><!-- .container -->
 	</footer><!-- #colophon -->
-	<?php if ( is_active_sidebar( 'footer_extra' ) ) : ?>
-		<div class="extra-footer">
+	<?php if ( is_active_sidebar( 'footer_extra_bottom' ) ) : ?>
+		<div class="extra-footer-bottom">
 			<div class="container">
 				<div class="row">
 					<div class="col">
-						<?php dynamic_sidebar( 'footer_extra' ); ?>
+						<?php dynamic_sidebar( 'footer_extra_bottom' ); ?>
 					</div>
 				</div>
 			</div>

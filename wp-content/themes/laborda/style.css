@@ -962,6 +962,7 @@ object {
 	--brownish-orange: #e3672a;
 	--brownish-purple: #723d54;
 	--lipstick: #d92650;
+	--tangerine: #ff9800;
 	--dusty-lavender: #c9c8c9;
 	--background-grey: #f9f9f9;
 	--icon-grey: #9b9b9b;
@@ -1195,12 +1196,24 @@ input[type="tel"] {
 	color: var(--footer-menu-color);
 }
 
-.extra-footer {
-	font-size: var(--extra-footer-font-size);
-	color: var(--extra-footer-color);
-	background-color: var(--extra-footer-bg-color);
+.extra-footer-top,
+.extra-footer-bottom {
 	padding: 12px;
+	font-size: var(--extra-footer-font-size);
+}
+
+.extra-footer-bottom {
+	color: var(--extra-footer-color);
 	line-height: 14px;
+	background-color: var(--extra-footer-bg-color);;
+}
+
+.extra-footer-top {
+	color: var(--primary-color);
+	background-color: var(--tangerine);
+	font-family: var(--font-family-secondary);
+	font-weight: bold;
+	text-align: center;
 }
 
 .activity-cards {
@@ -1379,7 +1392,6 @@ body.activities-list-view .activity-card p {
 .card-borderless {
 	border: none;
 }
-
 
 /* Bootstrap overwrites */
 

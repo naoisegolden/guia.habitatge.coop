@@ -182,8 +182,14 @@ function footer_widget_area() {
 		'after_widget'  => '</div>',
 	) );
 	register_sidebar( array(
-		'name'          => 'Extra Footer',
-		'id'            => 'footer_extra',
+		'name'          => 'Extra Footer Bottom',
+		'id'            => 'footer_extra_bottom',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+	) );
+	register_sidebar( array(
+		'name'          => 'Extra Footer Top',
+		'id'            => 'footer_extra_top',
 		'before_widget' => '<div>',
 		'after_widget'  => '</div>',
 	) );
