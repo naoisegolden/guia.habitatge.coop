@@ -36,5 +36,4 @@ get_header();
 </div><!-- .container-jumbo -->
 
 <?php
-// get_sidebar();
 get_footer();
