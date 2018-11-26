@@ -72,13 +72,13 @@ get_header();
 						</a>
 					</li>
 				  <li>
-						<a href="#" class="dropdown-item" data-value="title" tabIndex="-1">
-							<?php echo __( 'Per ordre alfabètic', 'laborda' ); ?>
+						<a href="#" class="dropdown-item" data-value="views" tabIndex="-1">
+							<?php echo __( 'Per més vist', 'laborda' ); ?>
 						</a>
 					</li>
 				  <li>
-						<a href="#" class="dropdown-item" data-value="views" tabIndex="-1">
-							<?php echo __( 'Per més vist', 'laborda' ); ?>
+						<a href="#" class="dropdown-item" data-value="title" tabIndex="-1">
+							<?php echo __( 'Per ordre alfabètic', 'laborda' ); ?>
 						</a>
 					</li>
 				</ul>
