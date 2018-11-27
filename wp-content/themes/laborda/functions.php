@@ -257,5 +257,58 @@ function phase_taxonomy() {
 			'show_in_quick_edit' => true,
 		)
 	);
- }
- add_action( 'init', 'phase_taxonomy' );
+}
+add_action( 'init', 'phase_taxonomy' );
+
+/**
+ * Bootstrap Button shortcode
+ */
+function register_button_shortcode( $shortcodes ) {
+	// Add new shortcode
+	$shortcodes['button'] = array(
+		// Shortcode name
+		'name' => __( 'Bootstrap button', 'laborda' ),
+		// Shortcode type. Can be 'wrap' or 'single'
+		// Example: [b]this is wrapped[/b], [this_is_single]
+		'type' => 'wrap',
+		// Shortcode group.
+		// Can be 'content', 'box', 'media' or 'other'.
+		// Groups can be mixed, for example 'content box'
+		'group' => 'content',
+		// List of shortcode params (attributes)
+		'atts' => array(
+			// Style attribute
+			'url' => array(
+				// Attribute type.
+				// Can be 'select', 'color', 'bool' or 'text'
+				'type' => 'text',
+				// Default value
+				'default' => '',
+				// Attribute name
+				'name' => __( 'URL', 'laborda' ),
+				// Attribute description
+				'desc' => __( 'Direcció URL', 'laborda' )
+			)
+		),
+		// Default content for generator (for wrap-type shortcodes)
+		'content' => __( 'Click me', 'laborda' ),
+		// Shortcode description for cheatsheet and generator
+		'desc' => __( 'A bootstrap button', 'laborda' ),
+		// Custom icon (font-awesome)
+		'icon' => 'link',
+		// Name of custom shortcode function
+		// IMPORTANT: this is the name of the next function
+		'function' => 'button_shortcode',
+	);
+	// Return modified data
+	return $shortcodes;
+}
+add_filter( 'su/data/shortcodes', 'register_button_shortcode' );
+
+function button_shortcode( $atts, $content = null ) {
+	$atts = shortcode_atts( array(
+			'url' => '#',
+		), $atts );
+
+	return sprintf( '<a class="btn btn-primary" href="%s">%s</a>', esc_attr( $atts['url'] ), $content );
+}
