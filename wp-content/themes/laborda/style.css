@@ -1344,9 +1344,9 @@ body.activities-list-view .activity-card p {
 
 .entry-title,
 .page-title,
-.page h1,
-.page h2,
-.page h3,
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
 .single h1,
 .single h2,
 .single h3 {
@@ -1358,7 +1358,7 @@ body.activities-list-view .activity-card p {
 	text-transform: uppercase;
 }
 
-.page h4,
+.entry-content h4,
 .single h4 {
 	color: var(--title-color);
 	font: var(--title-font);
@@ -1367,7 +1367,7 @@ body.activities-list-view .activity-card p {
 	text-align: left;
 }
 
-.page h5,
+.entry-content h5,
 .single h5,
 .single button {
 	color: var(--title-color);
