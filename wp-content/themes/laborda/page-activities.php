@@ -62,15 +62,15 @@ get_header();
 				</button>
 				<ul class="dropdown-menu dropdown-sort-js">
           <li>
+            <a href="#" class="dropdown-item" data-value="phase" tabIndex="-1">
+              <?php echo __( 'Per fase', 'laborda' ); ?>
+            </a>
+          </li>
+          <li>
             <a href="#" class="dropdown-item" data-value="category" tabIndex="-1">
               <?php echo __( 'Per temàtica', 'laborda' ); ?>
             </a>
           </li>
-				  <li>
-						<a href="#" class="dropdown-item" data-value="phase" tabIndex="-1">
-							<?php echo __( 'Per fase', 'laborda' ); ?>
-						</a>
-					</li>
 				  <li>
 						<a href="#" class="dropdown-item" data-value="views" tabIndex="-1">
 							<?php echo __( 'Per més vist', 'laborda' ); ?>
@@ -100,8 +100,18 @@ get_header();
 			<main id="main" class="site-main">
 				<div class="activity-cards row js-cards">
 					<?php
-						foreach( $categories as $category ) :
-							$loop = new WP_Query( array( 'post_type' => 'activity', 'cat' => $category->term_id ) );
+						foreach( $phases as $phase ) :
+              $args = array(
+                'post_type' => 'activity',
+                'tax_query' => array(
+                  array(
+                    'taxonomy' => 'phase',
+                    'field' => 'slug',
+                    'terms' => $phase->slug,
+                  ),
+                ),
+              );
+							$loop = new WP_Query( $args );
 							while ( $loop->have_posts() ) :
 
 								$loop->the_post();
