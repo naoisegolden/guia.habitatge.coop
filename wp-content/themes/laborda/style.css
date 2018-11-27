@@ -1237,9 +1237,16 @@ input[type="tel"] {
 	text-decoration: none;
 }
 
+.entry-content .activity-card h2,
 .activity-card h2 {
 	font-size: var(--activity-title-font-size);
+	font-family: var(--font-family);
 	font-weight: bold;
+	color: inherit;
+	margin-bottom: .5rem;
+	margin-top: inherit;
+	text-align: left;
+	text-transform: none;
 }
 
 body.activities-list-view .activity-card p {

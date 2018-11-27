@@ -312,3 +312,62 @@ function button_shortcode( $atts, $content = null ) {
 
 	return sprintf( '<a class="btn btn-primary" href="%s">%s</a>', esc_attr( $atts['url'] ), $content );
 }
+/**
+ * Activities List shortcode
+ */
+function register_activities_shortcode( $shortcodes ) {
+	$shortcodes['activities'] = array(
+		'name' => __( 'Activities List', 'laborda' ),
+		'type' => 'single',
+		'group' => 'content',
+		'atts' => array(
+			'ids' => array(
+				'type' => 'text',
+				'default' => '',
+				'name' => __( 'IDs', 'laborda' ),
+				'desc' => __( 'Space-separated Activity IDs (i.e. "1 23 4 56")', 'laborda' )
+			)
+		),
+		'content' => __( 'Click me', 'laborda' ),
+		'desc' => __( 'Display a list of activities', 'laborda' ),
+		'icon' => 'th-list',
+		'function' => 'activities_shortcode',
+	);
+	// Return modified data
+	return $shortcodes;
+}
+add_filter( 'su/data/shortcodes', 'register_activities_shortcode' );
+
+function activities_shortcode( $atts, $content = null ) {
+	$content = '';
+	$atts = shortcode_atts( array(
+			'ids' => '',
+		), $atts );
+
+	$args = array(
+		'post_type' => 'activity',
+		'post__in' => explode( ' ', $atts['ids']),
+	);
+	$loop = new WP_Query( $args );
+	$content .= '<div class="row">';
+	while ( $loop->have_posts() ) :
+
+		$loop->the_post();
+		$categories = get_the_category();
+		$classes = 'activity-card activity-card__' . $categories[0]->slug;
+
+		$content .= '  <div class="col-6 col-md-4 col-lg-3">';
+		$content .= '  	<article class="' . $classes .'">';
+		$content .= '  		<a class="activity-card__body" href="' . esc_url( get_permalink() ) .'" rel="bookmark">';
+		$content .= '  			<h2>'. get_the_title() . '</h2>';
+		$content .= '  			<p>' . get_the_excerpt() . '</p>';
+		$content .= '  		</a>';
+		$content .= '  	</article>';
+		$content .= '  </div>';
+
+	endwhile;
+	$content .= '</div>';
+
+	return $content;
+	// return sprintf( '<a class="btn btn-primary" href="%s">%s</a>', esc_attr( $atts['url'] ), $content );
+}
