@@ -1215,10 +1215,11 @@ input[type="tel"] {
 	margin-top: var(--activity-cards-margin-top);
 }
 
-.activity-card__economic { background: var(--blue-green); }
-.activity-card__habitar { background: var(--brownish-orange); }
-.activity-card__juridica { background: var(--brownish-purple); }
-.activity-card__social { background: var(--lipstick); }
+.activity-card { background-color: var(--icon-grey); }
+.activity-card__economic { background-color: var(--blue-green); }
+.activity-card__habitar { background-color: var(--brownish-orange); }
+.activity-card__juridica { background-color: var(--brownish-purple); }
+.activity-card__social { background-color: var(--lipstick); }
 
 .activity-card {;
 	border-radius: var(--border-radius);
