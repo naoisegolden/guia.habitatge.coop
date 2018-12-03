@@ -1000,6 +1000,8 @@ object {
 	--icon-size: 42px;
 	--small-icon-size: 24px;
 
+	--jumbotron-padding: 56px;
+
 	--footer-background-color: var(--navy);
 	--footer-padding: 56px;
 	--footer-color: white;
@@ -1410,6 +1412,16 @@ body.activities-list-view .activity-card p {
 
 .jumbo-help__thumbnail {
 	border: 2px solid var(--primary-color);
+}
+
+.inline-jumbotron {
+	background-color: var(--background-grey);
+	width: 100vw;
+	margin-left: calc(-50vw + 50%);
+	padding-bottom: var(--jumbotron-padding);
+	padding-top: var(--jumbotron-padding);
+	margin-bottom: var(--jumbotron-padding);
+	margin-top: var(--jumbotron-padding);
 }
 
 /* Bootstrap overwrites */

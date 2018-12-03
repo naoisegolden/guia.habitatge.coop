@@ -312,6 +312,7 @@ function button_shortcode( $atts, $content = null ) {
 
 	return sprintf( '<a class="btn btn-primary" href="%s">%s</a>', esc_attr( $atts['url'] ), $content );
 }
+
 /**
  * Activities List shortcode
  */
@@ -370,4 +371,36 @@ function activities_shortcode( $atts, $content = null ) {
 
 	return $content;
 	// return sprintf( '<a class="btn btn-primary" href="%s">%s</a>', esc_attr( $atts['url'] ), $content );
+}
+
+/**
+ * Inline Jumbotron shortcode
+ */
+function register_inline_jumbotron_shortcode( $shortcodes ) {
+	$shortcodes['inline_jumbotron'] = array(
+		'name' => __( 'Inline Jumbotron', 'laborda' ),
+		'type' => 'wrap',
+		'group' => 'content box',
+		'atts' => array(),
+		'content' => __( 'Inline jumbotron content', 'laborda' ),
+		'desc' => __( 'Any type of content', 'laborda' ),
+		'icon' => 'align-justify',
+		'function' => 'inline_jumbotron_shortcode',
+	);
+	// Return modified data
+	return $shortcodes;
+}
+add_filter( 'su/data/shortcodes', 'register_inline_jumbotron_shortcode' );
+
+function inline_jumbotron_shortcode( $atts, $content = null ) {
+	$output = '';
+	$output .= '<div class="inline-jumbotron">';
+	$output .= '	 <div class="container">';
+	$output .= '		 <div class="row">';
+	$output .= '			 <div class="col">' . $content . '</div>';
+	$output .= '		 </div>';
+	$output .= '	 </div>';
+	$output .= '</div>';
+
+	return $output;
 }
