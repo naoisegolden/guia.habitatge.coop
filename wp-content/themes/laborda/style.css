@@ -1135,7 +1135,7 @@ input[type="tel"] {
 	margin-bottom: 16px;
 }
 .search-result .entry-title a { color: var(--primary-color); }
-.search-result.economia .entry-title a { color: var(--blue-green); }
+.search-result.economic .entry-title a { color: var(--blue-green); }
 .search-result.habitar .entry-title a { color: var(--brownish-orange); }
 .search-result.juridica .entry-title a { color: var(--brownish-purple); }
 .search-result.social .entry-title a { color: var(--lipstick); }
@@ -1215,7 +1215,7 @@ input[type="tel"] {
 	margin-top: var(--activity-cards-margin-top);
 }
 
-.activity-card__economia { background: var(--blue-green); }
+.activity-card__economic { background: var(--blue-green); }
 .activity-card__habitar { background: var(--brownish-orange); }
 .activity-card__juridica { background: var(--brownish-purple); }
 .activity-card__social { background: var(--lipstick); }
@@ -1344,7 +1344,7 @@ body.activities-list-view .activity-card p {
 	height: 17px;
 }
 
-.dropdown-item.economia { color: var(--blue-green); }
+.dropdown-item.economic { color: var(--blue-green); }
 .dropdown-item.habitar { color: var(--brownish-orange); }
 .dropdown-item.juridica { color: var(--brownish-purple); }
 .dropdown-item.social { color: var(--lipstick); }
