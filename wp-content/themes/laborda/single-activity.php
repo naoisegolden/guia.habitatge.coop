@@ -22,23 +22,31 @@ get_header();
 		</div><!-- .container -->
 	</div><!-- .container-jumbo -->
 
-	<div class="container container-content">
-		<?php get_template_part( 'template-parts/content-activity-steps' ); ?>
-	</div><!-- .container -->
-
-	<div class="container-jumbo">
+	<?php if ( get_field( 'steps' ) ) : ?>
 		<div class="container container-content">
-			<?php get_template_part( 'template-parts/content-activity-tips' ); ?>
+			<?php get_template_part( 'template-parts/content-activity-steps' ); ?>
 		</div><!-- .container -->
-	</div><!-- .container-jumbo -->
+	<?php endif; ?>
 
-	<div class="container container-content">
-		<?php get_template_part( 'template-parts/content-activity-examples' ); ?>
-	</div><!-- .container -->
+	<?php if ( have_rows('tips') ) : ?>
+		<div class="container-jumbo">
+			<div class="container container-content">
+				<?php get_template_part( 'template-parts/content-activity-tips' ); ?>
+			</div><!-- .container -->
+		</div><!-- .container-jumbo -->
+	<?php endif; ?>
 
-	<div class="container container-content">
-		<?php get_template_part( 'template-parts/content-activity-more-info' ); ?>
-	</div><!-- .container -->
+	<?php if( have_rows('examples') ) : ?>
+		<div class="container container-content">
+			<?php get_template_part( 'template-parts/content-activity-examples' ); ?>
+		</div><!-- .container -->
+	<?php endif; ?>
+
+	<?php if ( get_field( 'more_information' ) ) : ?>
+		<div class="container container-content">
+			<?php get_template_part( 'template-parts/content-activity-more-info' ); ?>
+		</div><!-- .container -->
+	<?php endif; ?>
 
 	<?php
 		if ( comments_open() || get_comments_number() ) :

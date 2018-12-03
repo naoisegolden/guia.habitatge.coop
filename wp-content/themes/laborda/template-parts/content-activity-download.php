@@ -29,13 +29,15 @@ $facebook_link = 'https://www.facebook.com/sharer/sharer.php?u=' . $permalink;
       <i class="material-icons icon mr-1">visibility</i>
       <span><?php echo $view_count; ?></span>
     </div>
-    <div class="download-statistics mr-5 mt-4">
-      <i class="material-icons icon mr-1">save_alt</i>
-      <span><?php echo $download_count; ?></span>
-    </div>
-    <a class="btn btn-primary download-button" href="<?php echo $download_link; ?>" download role="button">
-      <?php echo __( 'Descarrega', 'laborda' ); ?>
-    </a>
+    <?php if ( $download_link ) : ?>
+      <div class="download-statistics mr-5 mt-4">
+        <i class="material-icons icon mr-1">save_alt</i>
+        <span><?php echo $download_count; ?></span>
+      </div>
+      <a class="btn btn-primary download-button" href="<?php echo $download_link; ?>" download role="button">
+        <?php echo __( 'Descarrega', 'laborda' ); ?>
+      </a>
+    <?php endif; ?>
   </div>
 </div>
 <div class="row mb-5">
@@ -72,12 +74,16 @@ $facebook_link = 'https://www.facebook.com/sharer/sharer.php?u=' . $permalink;
   </div>
 </div>
 <div class="row">
-  <div class="col-8">
-    <h3 class="text-left"><?php echo __( 'Activitats relacionades', 'laborda' ); ?></h3>
-    <?php the_field( 'related_activities' ); ?>
-  </div>
-  <div class="col-4">
-    <h3 class="text-left"><?php echo __( 'Espai', 'laborda' ); ?></h3>
-    <?php the_field( 'space' ); ?>
-  </div>
+  <?php if ( get_field( 'related_activities' ) ) : ?>
+    <div class="col-8">
+      <h3 class="text-left"><?php echo __( 'Activitats relacionades', 'laborda' ); ?></h3>
+      <?php the_field( 'related_activities' ); ?>
+    </div>
+  <?php endif; ?>
+  <?php if ( get_field( 'space' ) ) : ?>
+    <div class="col-4">
+      <h3 class="text-left"><?php echo __( 'Espai', 'laborda' ); ?></h3>
+      <?php the_field( 'space' ); ?>
+    </div>
+  <?php endif; ?>
 </div><!-- .row -->
