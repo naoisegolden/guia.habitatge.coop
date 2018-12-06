@@ -397,7 +397,7 @@ function inline_jumbotron_shortcode( $atts, $content = null ) {
 	$output .= '<div class="inline-jumbotron">';
 	$output .= '	 <div class="container">';
 	$output .= '		 <div class="row">';
-	$output .= '			 <div class="col">' . $content . '</div>';
+	$output .= '			 <div class="col">' . su_do_nested_shortcodes( $content, 'inline_jumbotron' ) . '</div>';
 	$output .= '		 </div>';
 	$output .= '	 </div>';
 	$output .= '</div>';
