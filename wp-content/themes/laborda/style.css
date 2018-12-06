@@ -1234,6 +1234,7 @@ input[type="tel"] {
 	padding: var(--activity-card-padding);
 }
 
+.activity-card,
 .activity-card a,
 .activity-card a:hover {
 	color: var(--white);
