@@ -384,7 +384,7 @@ function register_inline_jumbotron_shortcode( $shortcodes ) {
 		'atts' => array(),
 		'content' => __( 'Inline jumbotron content', 'laborda' ),
 		'desc' => __( 'Any type of content', 'laborda' ),
-		'icon' => 'align-justify',
+		'icon' => 'square',
 		'function' => 'inline_jumbotron_shortcode',
 	);
 	// Return modified data
@@ -400,6 +400,34 @@ function inline_jumbotron_shortcode( $atts, $content = null ) {
 	$output .= '			 <div class="col">' . su_do_nested_shortcodes( $content, 'inline_jumbotron' ) . '</div>';
 	$output .= '		 </div>';
 	$output .= '	 </div>';
+	$output .= '</div>';
+
+	return $output;
+}
+
+/**
+ * Center content block shortcode
+ */
+function register_center_content_shortcode( $shortcodes ) {
+	$shortcodes['center_content'] = array(
+		'name' => __( 'Center Content', 'laborda' ),
+		'type' => 'wrap',
+		'group' => 'content',
+		'atts' => array(),
+		'content' => __( '', 'laborda' ),
+		'desc' => __( 'Any type of content', 'laborda' ),
+		'icon' => 'align-justify',
+		'function' => 'center_content_shortcode',
+	);
+	// Return modified data
+	return $shortcodes;
+}
+add_filter( 'su/data/shortcodes', 'register_center_content_shortcode' );
+
+function center_content_shortcode( $atts, $content = null ) {
+	$output = '';
+	$output .= '<div class="row">';
+	$output .= '  <div class="col-8 offset-2">' . su_do_nested_shortcodes( $content, 'center_content' ) . '</div>';
 	$output .= '</div>';
 
 	return $output;
