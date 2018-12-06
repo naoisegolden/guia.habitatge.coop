@@ -47,5 +47,13 @@ get_header();
 	</div><!-- .row -->
 </div><!-- .container -->
 
+<?php if ( get_field( 'jumbo_show' ) ) : ?>
+	<div class="container-jumbo">
+		<div class="container container-content">
+			<?php get_template_part( 'template-parts/content', 'jumbo-guia' ); ?>
+		</div><!-- .container -->
+	</div><!-- .container-jumbo -->
+<?php endif; ?>
+
 <?php
 get_footer();
