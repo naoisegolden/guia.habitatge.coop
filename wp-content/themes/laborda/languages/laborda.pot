@@ -1,23 +1,13 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: La Borda 1.0.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/laborda\n"
-"Last-Translator: Naoise Golden Santos <naoise.golden@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2018-12-15T11:51:10+00:00\n"
-"PO-Revision-Date: 2018-12-15T11:51:10+00:00\n"
+"POT-Creation-Date: 2018-12-15T15:58:57+00:00\n"
+"PO-Revision-Date: 2018-12-15T15:58:57+00:00\n"
 "X-Generator: WP-CLI 2.0.1\n"
 "X-Domain: laborda\n"
-
-#. Theme Name of the theme
-msgid "La Borda"
-msgstr ""
-
-#. Theme URI of the theme
-msgid "https://laborda.coop/"
-msgstr ""
 
 #: functions.php:47
 msgid "Header"
@@ -225,7 +215,7 @@ msgid "Filter by phase"
 msgstr ""
 
 #: page-activities.php:61
-msgid "Ordena"
+msgid "Order"
 msgstr ""
 
 #: page-activities.php:66
@@ -295,7 +285,7 @@ msgid "Activities"
 msgstr ""
 
 #: template-parts/content-activity-examples.php:3
-msgid "Exemples de la comunitat"
+msgid "Other examples from the community"
 msgstr ""
 
 #: template-parts/content-activity-examples.php:35
@@ -328,4 +318,14 @@ msgstr ""
 
 #: template-parts/content-activity-download.php:85
 msgid "Space"
+msgstr ""
+
+#: searchform.php:4
+msgctxt "placeholder"
+msgid "Search…"
+msgstr ""
+
+#: searchform.php:6
+msgctxt "submit button"
+msgid "Search"
 msgstr ""
