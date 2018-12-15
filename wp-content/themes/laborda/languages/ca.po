@@ -1,0 +1,359 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: La Borda 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/laborda\n"
+"POT-Creation-Date: 2018-12-15T15:58:57+00:00\n"
+"PO-Revision-Date: 2018-12-15 16:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Domain: laborda\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: functions.php:47
+msgid "Header"
+msgstr "Capçalera"
+
+#: functions.php:216
+msgid "Excerpt"
+msgstr "Extracte"
+
+#: functions.php:238
+msgctxt "taxonomy general name"
+msgid "Phases"
+msgstr "Fases"
+
+#: functions.php:239
+msgctxt "taxonomy singular name"
+msgid "Phase"
+msgstr "Fase"
+
+#: functions.php:240
+msgid "Search Phases"
+msgstr "Cerca fases"
+
+#: functions.php:241
+msgid "All Phases"
+msgstr "Totes les fases"
+
+#: functions.php:242
+msgid "Parent Phase"
+msgstr "Fase pare"
+
+#: functions.php:243
+msgid "Parent Phase:"
+msgstr "Fase pare:"
+
+#: functions.php:244
+msgid "Edit Phase"
+msgstr "Editar fase"
+
+#: functions.php:245
+msgid "Update Phase"
+msgstr "Actualitzar fase"
+
+#: functions.php:246
+msgid "Add New Phase"
+msgstr "Afegir nova fase"
+
+#: functions.php:247
+msgid "New Phase Name"
+msgstr "Nom de la nova fase"
+
+#: functions.php:248
+msgid "Phase"
+msgstr "Fase"
+
+#: functions.php:270
+msgid "Bootstrap button"
+msgstr "Botó de Bootstrap"
+
+#: functions.php:288
+msgid "URL"
+msgstr "URL"
+
+#: functions.php:290
+msgid "URL address"
+msgstr "Direcció URL"
+
+#: functions.php:294 functions.php:332
+msgid "Click me"
+msgstr "Fes clic"
+
+#: functions.php:296
+msgid "A bootstrap button"
+msgstr "Un botó amb l’estil de Bootstrap"
+
+#: functions.php:321
+msgid "Activities List"
+msgstr "Llista d’activitats"
+
+#: functions.php:328
+msgid "IDs"
+msgstr "IDs"
+
+#: functions.php:329
+msgid "Space-separated Activity IDs (i.e. \"1 23 4 56\")"
+msgstr "IDs d’activitats separades amb un espai (p.e. “1 23 4 56”)"
+
+#: functions.php:333
+msgid "Display a list of activities"
+msgstr "Mostra una llista d’activitats"
+
+#: functions.php:381
+msgid "Inline Jumbotron"
+msgstr "Jumbotró"
+
+#: functions.php:385
+msgid "Inline jumbotron content"
+msgstr "Contingut del jumbotró"
+
+#: functions.php:386 functions.php:418
+msgid "Any type of content"
+msgstr "Qualsevol tipus de contingut"
+
+#: functions.php:413
+msgid "Center Content"
+msgstr "Centrar continguts"
+
+#: 404.php:19
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Ups! No s’ha trobat aquesta pàgina."
+
+#: 404.php:23
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr "Sembla que no hi ha res aquí. Prova de fer servir el cercador."
+
+#. translators: %s: post date.
+#: inc/template-tags.php:29
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr "Publicat el %s"
+
+#. translators: %s: post author.
+#: inc/template-tags.php:45
+msgctxt "post author"
+msgid "by %s"
+msgstr "per %s"
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:62
+msgid ", "
+msgstr ", "
+
+#. translators: 1: list of categories.
+#: inc/template-tags.php:65
+msgid "Posted in %1$s"
+msgstr "Publicat a %1$s"
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:69
+msgctxt "list item separator"
+msgid ", "
+msgstr ", "
+
+#. translators: 1: list of tags.
+#: inc/template-tags.php:72
+msgid "Tagged %1$s"
+msgstr "Etiquetat %1$s"
+
+#. translators: %s: post title
+#: inc/template-tags.php:82
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr "Deixa un comentari <span class=“screen-reader-text”>a %s</span>"
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: inc/template-tags.php:99 template-parts/content-page.php:37
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr "Edita <span class=“screen-reader-text”>%s</span>"
+
+#. Template Name of the theme
+msgid "Search Page"
+msgstr "Pàgina de cerca"
+
+#. translators: 1: title.
+#: comments.php:35
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr "Un comentari sobre &ldquo;%1$s&rdquo;"
+
+#. translators: 1: comment count number, 2: title.
+#: comments.php:41
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s comentari &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s comentaris sobre &ldquo;%2$s&rdquo;"
+
+#: comments.php:66
+msgid "Comments are closed."
+msgstr "No es pot comentar."
+
+#: search.php:20
+msgid "Search Results"
+msgstr "Resultats de la cerca"
+
+#: search.php:24
+msgid "Search Results for \"%s\""
+msgstr "Resultats per %s"
+
+#. Template Name of the theme
+msgid "Activities List Page"
+msgstr "Pàgina d’activitats"
+
+#: page-activities.php:17
+msgid "Filter by category"
+msgstr "Filtrar per temàtica"
+
+#: page-activities.php:22 page-activities.php:44
+msgid "Reset"
+msgstr "Resetejar"
+
+#: page-activities.php:39
+msgid "Filter by phase"
+msgstr "Filtrar per fase"
+
+#: page-activities.php:61
+msgid "Order"
+msgstr "Ordena"
+
+#: page-activities.php:66
+msgid "By phase"
+msgstr "Per fase"
+
+#: page-activities.php:71
+msgid "By category"
+msgstr "Per temàtica"
+
+#: page-activities.php:76
+msgid "Most seen"
+msgstr "Més vistos"
+
+#: page-activities.php:81
+msgid "Alphabetically"
+msgstr "Per ordre alfabètic"
+
+#: header.php:25
+msgid "Skip to content"
+msgstr "Anar a continguts"
+
+#: header.php:46
+msgid "Primary Menu"
+msgstr "Menú principal"
+
+#: template-parts/content-activity-tips.php:3
+msgid "Tips and Tricks"
+msgstr "Trucs i consells"
+
+#. translators: 1: link to WP admin new post page.
+#: template-parts/content-none.php:20
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Llestos per publicar la primera entrada? <a href=“%1$s”>Començar per aquí</"
+"a>."
+
+#: template-parts/content-none.php:33
+msgid "Sorry, no results found"
+msgstr "Ho sentim, no s&rsquo;ha trobat cap resultat"
+
+#: template-parts/content-none.php:34
+msgid "Check your spelling or try to use similar words."
+msgstr ""
+"Prova de revisar l&rsquo;ortografia, o fer servir paraules similars, per "
+"exemple."
+
+#: template-parts/content-none.php:39
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Sembla que no has trobat el que buscaves. Prova a fer servir el cercador."
+
+#: template-parts/content-page.php:24 template-parts/content.php:50
+#: template-parts/content-activity-main.php:27
+#: template-parts/content-activity-list.php:28
+msgid "Pages:"
+msgstr "Pàgines:"
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: template-parts/content.php:39 template-parts/content-activity-main.php:16
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr "Continua llegint <span class=“screen-reader-text”>“%s”</span>"
+
+#: template-parts/content-activity-steps.php:3
+msgid "How to do the activity"
+msgstr "Dur a terme l&rsquo;activitat"
+
+#: template-parts/content-activity-breadcrumbs.php:7
+msgid "Activities"
+msgstr "Activitats"
+
+#: template-parts/content-activity-examples.php:3
+msgid "Other examples from the community"
+msgstr "Exemples de la comunitat"
+
+#: template-parts/content-activity-examples.php:35
+msgid "Add your example!"
+msgstr "Suma el teu exemple!"
+
+#: template-parts/content-activity-examples.php:36
+msgid ""
+"Are you a community that has done this activity? Send us an example of your "
+"results to <a href=\"mailto:guia@habitatge.coop\">guia@habitatge.coop</a> "
+"and we will add it to the list."
+msgstr ""
+"Ets una comunitat i has dut a terme aquesta activitat? Envia’ns l’exemple "
+"del resultat a <a href=“mailto:guia@habitatge.coop”>guia@habitatge.coop</a> "
+"i ho afegirem a la llista."
+
+#: template-parts/content-activity-more-info.php:3
+msgid "More info"
+msgstr "Més informació"
+
+#: template-parts/content-activity-download.php:38
+msgid "Download"
+msgstr "Descarrega"
+
+#: template-parts/content-activity-download.php:66
+msgid "Previous"
+msgstr "Previ"
+
+#: template-parts/content-activity-download.php:70
+msgid "Next"
+msgstr "Següent"
+
+#: template-parts/content-activity-download.php:79
+msgid "Related activities"
+msgstr "Activitats relacionades"
+
+#: template-parts/content-activity-download.php:85
+msgid "Space"
+msgstr "Espai"
+
+#: searchform.php:4
+msgctxt "placeholder"
+msgid "Search…"
+msgstr "Cerca…"
+
+#: searchform.php:6
+msgctxt "submit button"
+msgid "Search"
+msgstr "Cerca"
+
+#~ msgid "La Borda"
+#~ msgstr "La Borda"
+
+#~ msgid "https://laborda.coop/"
+#~ msgstr "https://laborda.coop/"
+
+#, fuzzy
+#~| msgid "https://laborda.coop/"
+#~ msgid "https://naoisegolden.com/"
+#~ msgstr "https://laborda.coop/"
+
+#~ msgid "Other examples"
+#~ msgstr "Exemples de la comunitat"
