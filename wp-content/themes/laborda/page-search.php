@@ -8,7 +8,7 @@ get_header();
 
 <div class="container">
 	<div class="row">
-		<section id="primary" class="content-area col-8 offset-2">
+		<section id="primary" class="content-area col-12 col-md-8 offset-md-2">
 			<main id="main" class="site-main">
 				<header class="page-header mb-4">
 					<h1 class="page-title">

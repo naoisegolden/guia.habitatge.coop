@@ -11,7 +11,7 @@ get_header();
 ?>
 <div class="container">
 	<div class="row">
-		<div id="primary" class="content-area col-8 offset-2">
+		<div id="primary" class="content-area col-12 col-md-8 offset-md-2">
 			<main id="main" class="site-main">
 
 				<section class="error-404 not-found">

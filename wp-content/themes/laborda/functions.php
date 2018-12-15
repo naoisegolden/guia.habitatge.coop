@@ -427,7 +427,7 @@ add_filter( 'su/data/shortcodes', 'register_center_content_shortcode' );
 function center_content_shortcode( $atts, $content = null ) {
 	$output = '';
 	$output .= '<div class="row">';
-	$output .= '  <div class="col-8 offset-2">' . su_do_nested_shortcodes( $content, 'center_content' ) . '</div>';
+	$output .= '  <div class="col-12 col-md-8 offset-md-2">' . su_do_nested_shortcodes( $content, 'center_content' ) . '</div>';
 	$output .= '</div>';
 
 	return $output;
