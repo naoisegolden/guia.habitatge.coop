@@ -287,7 +287,7 @@ function register_button_shortcode( $shortcodes ) {
 				// Attribute name
 				'name' => __( 'URL', 'laborda' ),
 				// Attribute description
-				'desc' => __( 'Direcció URL', 'laborda' )
+				'desc' => __( 'URL address', 'laborda' )
 			)
 		),
 		// Default content for generator (for wrap-type shortcodes)

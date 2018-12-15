@@ -14,7 +14,7 @@ get_header();
     <div class="col-12">
     	<div class="btn-group mr-2">
         <button type="button" class="btn btn-default btn-filter dropdown-toggle" data-toggle="dropdown">
-					<?php echo __( 'Filtrar per temàtica', 'laborda' ); ?>
+					<?php echo __( 'Filter by category', 'laborda' ); ?>
 				</button>
 				<ul class="dropdown-menu dropdown-filter-js">
 				  <li>
@@ -36,7 +36,7 @@ get_header();
 
 			<div class="btn-group mr-2">
         <button type="button" class="btn btn-default btn-filter dropdown-toggle" data-toggle="dropdown">
-					<?php echo __( 'Filtrar per fase', 'laborda' ); ?>
+					<?php echo __( 'Filter by phase', 'laborda' ); ?>
 				</button>
 				<ul class="dropdown-menu dropdown-filter-js">
 				  <li>
@@ -63,22 +63,22 @@ get_header();
 				<ul class="dropdown-menu dropdown-sort-js">
           <li>
             <a href="#" class="dropdown-item" data-value="phase" tabIndex="-1">
-              <?php echo __( 'Per fase', 'laborda' ); ?>
+              <?php echo __( 'By phase', 'laborda' ); ?>
             </a>
           </li>
           <li>
             <a href="#" class="dropdown-item" data-value="category" tabIndex="-1">
-              <?php echo __( 'Per temàtica', 'laborda' ); ?>
+              <?php echo __( 'By category', 'laborda' ); ?>
             </a>
           </li>
 				  <li>
 						<a href="#" class="dropdown-item" data-value="views" tabIndex="-1">
-							<?php echo __( 'Per més vist', 'laborda' ); ?>
+							<?php echo __( 'Most seen', 'laborda' ); ?>
 						</a>
 					</li>
 				  <li>
 						<a href="#" class="dropdown-item" data-value="title" tabIndex="-1">
-							<?php echo __( 'Per ordre alfabètic', 'laborda' ); ?>
+							<?php echo __( 'Alphabetically', 'laborda' ); ?>
 						</a>
 					</li>
 				</ul>

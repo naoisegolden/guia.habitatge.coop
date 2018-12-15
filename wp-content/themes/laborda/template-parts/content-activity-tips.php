@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col">
-    <h2><?php echo __('Trucs i consells', 'laborda'); ?></h2>
+    <h2><?php echo __('Tips and Tricks', 'laborda'); ?></h2>
     <div class="card-columns tip-cards">
       <?php
       if( have_rows('tips') ):

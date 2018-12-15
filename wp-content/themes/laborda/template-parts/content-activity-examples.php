@@ -32,8 +32,8 @@
     </div><!-- #examples-accordion -->
     <div class="card">
       <div class="card-body card-body-examples">
-        <h5 class="card-title"><?php echo __('Suma el teu exemple!', 'laborda'); ?></h5>
-        <p class="card-text mb-0"><?php echo __('Ets una comunitat i has dut a terme aquesta activitat? Envia’ns l’exemple del resultat a <a href="mailto:guia@habitatge.coop">guia@habitatge.coop</a> i ho  afegirem a la llista', 'laborda') ?></p>
+        <h5 class="card-title"><?php echo __('Add your example!', 'laborda'); ?></h5>
+        <p class="card-text mb-0"><?php echo __('Are you a community that has done this activity? Send us an example of your results to <a href="mailto:guia@habitatge.coop">guia@habitatge.coop</a> and we will add it to the list.', 'laborda') ?></p>
       </div>
     </div>
   </div>
