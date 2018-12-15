@@ -1,186 +1,331 @@
-# Copyright (C) 2017 Automattic
-# This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: _s 1.0.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2016-12-23 16:00+0100\n"
+"Project-Id-Version: La Borda 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/laborda\n"
+"Last-Translator: Naoise Golden Santos <naoise.golden@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
-"Last-Translator:\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"X-Generator: grunt-wp-i18n 0.5.4\n"
+"POT-Creation-Date: 2018-12-15T11:51:10+00:00\n"
+"PO-Revision-Date: 2018-12-15T11:51:10+00:00\n"
+"X-Generator: WP-CLI 2.0.1\n"
+"X-Domain: laborda\n"
 
-#: 404.php:17
-msgid "Oops! That page can&rsquo;t be found."
+#. Theme Name of the theme
+msgid "La Borda"
 msgstr ""
 
-#: 404.php:21
-msgid ""
-"It looks like nothing was found at this location. Maybe try one of the "
-"links below or a search?"
-msgstr ""
-
-#: 404.php:30
-msgid "Most Used Categories"
-msgstr ""
-
-#: 404.php:47
-#. translators: %1$s: smiley
-msgid "Try looking in the monthly archives. %1$s"
-msgstr ""
-
-#: comments.php:34
-#. translators: 1: title.
-msgid "One thought on &ldquo;%1$s&rdquo;"
-msgstr ""
-
-#: comments.php:67
-msgid "Comments are closed."
-msgstr ""
-
-#: footer.php:18
-msgid "https://wordpress.org/"
-msgstr ""
-
-#: footer.php:20
-#. translators: %s: CMS name, i.e. WordPress.
-msgid "Proudly powered by %s"
-msgstr ""
-
-#: footer.php:25
-#. translators: 1: Theme name, 2: Theme author.
-msgid "Theme: %1$s by %2$s."
+#. Theme URI of the theme
+msgid "https://laborda.coop/"
 msgstr ""
 
 #: functions.php:47
-msgid "Primary"
+msgid "Header"
 msgstr ""
 
-#: functions.php:105
-msgid "Sidebar"
+#: functions.php:216
+msgid "Excerpt"
 msgstr ""
 
-#: functions.php:107
-msgid "Add widgets here."
+#: functions.php:238
+msgctxt "taxonomy general name"
+msgid "Phases"
 msgstr ""
 
-#: header.php:24
-msgid "Skip to content"
+#: functions.php:239
+msgctxt "taxonomy singular name"
+msgid "Phase"
 msgstr ""
 
-#: header.php:45
-msgid "Primary Menu"
+#: functions.php:240
+msgid "Search Phases"
 msgstr ""
 
-#: inc/template-tags.php:52
-#. translators: used between list items, there is a space after the comma
-msgid ", "
+#: functions.php:241
+msgid "All Phases"
 msgstr ""
 
-#: inc/template-tags.php:55
-#. translators: 1: list of categories.
-msgid "Posted in %1$s"
+#: functions.php:242
+msgid "Parent Phase"
 msgstr ""
 
-#: inc/template-tags.php:62
-#. translators: 1: list of tags.
-msgid "Tagged %1$s"
+#: functions.php:243
+msgid "Parent Phase:"
 msgstr ""
 
-#: inc/template-tags.php:72
-#. translators: %s: post title
-msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+#: functions.php:244
+msgid "Edit Phase"
 msgstr ""
 
-#: inc/template-tags.php:89 template-parts/content-page.php:35
-#. translators: %s: Name of current post. Only visible to screen readers
-msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+#: functions.php:245
+msgid "Update Phase"
 msgstr ""
 
-#: search.php:21
-#. translators: %s: search query.
-msgid "Search Results for: %s"
+#: functions.php:246
+msgid "Add New Phase"
 msgstr ""
 
-#: template-parts/content-none.php:14
-msgid "Nothing Found"
+#: functions.php:247
+msgid "New Phase Name"
 msgstr ""
 
-#: template-parts/content-none.php:25
-#. translators: 1: link to WP admin new post page.
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+#: functions.php:248
+msgid "Phase"
 msgstr ""
 
-#: template-parts/content-none.php:38
-msgid ""
-"Sorry, but nothing matched your search terms. Please try again with some "
-"different keywords."
+#: functions.php:270
+msgid "Bootstrap button"
 msgstr ""
 
-#: template-parts/content-none.php:44
-msgid ""
-"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
-"searching can help."
+#: functions.php:288
+msgid "URL"
 msgstr ""
 
-#: template-parts/content-page.php:22 template-parts/content.php:45
-msgid "Pages:"
+#: functions.php:290
+msgid "URL address"
 msgstr ""
 
-#: template-parts/content.php:34
-#. translators: %s: Name of current post. Only visible to screen readers
-msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+#: functions.php:294
+#: functions.php:332
+msgid "Click me"
 msgstr ""
 
-#. Theme Name of the plugin/theme
-msgid "_s"
+#: functions.php:296
+msgid "A bootstrap button"
 msgstr ""
 
-#. Theme URI of the plugin/theme
-msgid "https://underscores.me/"
+#: functions.php:321
+msgid "Activities List"
 msgstr ""
 
-#. Description of the plugin/theme
-msgid ""
-"Hi. I'm a starter theme called <code>_s</code>, or <em>underscores</em>, if "
-"you like. I'm a theme meant for hacking so don't use me as a <em>Parent "
-"Theme</em>. Instead try turning me into the next, most awesome, WordPress "
-"theme out there. That's what I'm here for."
+#: functions.php:328
+msgid "IDs"
 msgstr ""
 
-#. Author of the plugin/theme
-msgid "Automattic"
+#: functions.php:329
+msgid "Space-separated Activity IDs (i.e. \"1 23 4 56\")"
 msgstr ""
 
-#. Author URI of the plugin/theme
-msgid "https://automattic.com/"
+#: functions.php:333
+msgid "Display a list of activities"
 msgstr ""
 
-#: comments.php:40
-#. translators: 1: comment count number, 2: title.
-msgctxt "comments title"
-msgid "%1$s thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] ""
-msgstr[1] ""
+#: functions.php:381
+msgid "Inline Jumbotron"
+msgstr ""
 
-#: inc/template-tags.php:29
+#: functions.php:385
+msgid "Inline jumbotron content"
+msgstr ""
+
+#: functions.php:386
+#: functions.php:418
+msgid "Any type of content"
+msgstr ""
+
+#: functions.php:413
+msgid "Center Content"
+msgstr ""
+
+#: 404.php:19
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:23
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
 #. translators: %s: post date.
+#: inc/template-tags.php:29
 msgctxt "post date"
 msgid "Posted on %s"
 msgstr ""
 
-#: inc/template-tags.php:35
 #. translators: %s: post author.
+#: inc/template-tags.php:45
 msgctxt "post author"
 msgid "by %s"
 msgstr ""
 
-#: inc/template-tags.php:59
 #. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:62
+msgid ", "
+msgstr ""
+
+#. translators: 1: list of categories.
+#: inc/template-tags.php:65
+msgid "Posted in %1$s"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:69
 msgctxt "list item separator"
 msgid ", "
+msgstr ""
+
+#. translators: 1: list of tags.
+#: inc/template-tags.php:72
+msgid "Tagged %1$s"
+msgstr ""
+
+#. translators: %s: post title
+#: inc/template-tags.php:82
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: inc/template-tags.php:99
+#: template-parts/content-page.php:37
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Search Page"
+msgstr ""
+
+#. translators: 1: title.
+#: comments.php:35
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#. translators: 1: comment count number, 2: title.
+#: comments.php:41
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+
+#: comments.php:66
+msgid "Comments are closed."
+msgstr ""
+
+#: search.php:20
+msgid "Search Results"
+msgstr ""
+
+#: search.php:24
+msgid "Search Results for \"%s\""
+msgstr ""
+
+#. Template Name of the theme
+msgid "Activities List Page"
+msgstr ""
+
+#: page-activities.php:17
+msgid "Filter by category"
+msgstr ""
+
+#: page-activities.php:22
+#: page-activities.php:44
+msgid "Reset"
+msgstr ""
+
+#: page-activities.php:39
+msgid "Filter by phase"
+msgstr ""
+
+#: page-activities.php:61
+msgid "Ordena"
+msgstr ""
+
+#: page-activities.php:66
+msgid "By phase"
+msgstr ""
+
+#: page-activities.php:71
+msgid "By category"
+msgstr ""
+
+#: page-activities.php:76
+msgid "Most seen"
+msgstr ""
+
+#: page-activities.php:81
+msgid "Alphabetically"
+msgstr ""
+
+#: header.php:25
+msgid "Skip to content"
+msgstr ""
+
+#: header.php:46
+msgid "Primary Menu"
+msgstr ""
+
+#: template-parts/content-activity-tips.php:3
+msgid "Tips and Tricks"
+msgstr ""
+
+#. translators: 1: link to WP admin new post page.
+#: template-parts/content-none.php:20
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:33
+msgid "Sorry, no results found"
+msgstr ""
+
+#: template-parts/content-none.php:34
+msgid "Check your spelling or try to use similar words."
+msgstr ""
+
+#: template-parts/content-none.php:39
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: template-parts/content-page.php:24
+#: template-parts/content.php:50
+#: template-parts/content-activity-main.php:27
+#: template-parts/content-activity-list.php:28
+msgid "Pages:"
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: template-parts/content.php:39
+#: template-parts/content-activity-main.php:16
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: template-parts/content-activity-steps.php:3
+msgid "How to do the activity"
+msgstr ""
+
+#: template-parts/content-activity-breadcrumbs.php:7
+msgid "Activities"
+msgstr ""
+
+#: template-parts/content-activity-examples.php:3
+msgid "Exemples de la comunitat"
+msgstr ""
+
+#: template-parts/content-activity-examples.php:35
+msgid "Add your example!"
+msgstr ""
+
+#: template-parts/content-activity-examples.php:36
+msgid "Are you a community that has done this activity? Send us an example of your results to <a href=\"mailto:guia@habitatge.coop\">guia@habitatge.coop</a> and we will add it to the list."
+msgstr ""
+
+#: template-parts/content-activity-more-info.php:3
+msgid "More info"
+msgstr ""
+
+#: template-parts/content-activity-download.php:38
+msgid "Download"
+msgstr ""
+
+#: template-parts/content-activity-download.php:66
+msgid "Previous"
+msgstr ""
+
+#: template-parts/content-activity-download.php:70
+msgid "Next"
+msgstr ""
+
+#: template-parts/content-activity-download.php:79
+msgid "Related activities"
+msgstr ""
+
+#: template-parts/content-activity-download.php:85
+msgid "Space"
 msgstr ""
