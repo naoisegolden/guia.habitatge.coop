@@ -8,7 +8,7 @@ $view_count = function_exists('pvc_get_post_views') ? pvc_get_post_views() : 0;
 $hide_page = get_field( 'hide_activity_page' );
 ?>
 
-<div class="col-6 col-md-4 col-lg-3 js-card"
+<div class="col-12 col-sm-6 col-md-4 col-lg-3 js-card"
 	data-groups="<?php echo esc_html(json_encode($groups)) ?>"
 	data-category="<?php echo empty($categories) ? 0 : $categories[0]->slug ?>"
 	data-phase="<?php echo empty($phases) ? 0 : $phases[0]->slug ?>"

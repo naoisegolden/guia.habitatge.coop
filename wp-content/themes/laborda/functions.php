@@ -357,7 +357,7 @@ function activities_shortcode( $atts, $content = null ) {
 		$categories = get_the_category();
 		$classes = 'activity-card activity-card__' . $categories[0]->slug;
 
-		$content .= '  <div class="col-6 col-md-4 col-lg-3">';
+		$content .= '  <div class="col-12 col-sm-6 col-md-4 col-lg-3">';
 		$content .= '  	<article class="' . $classes .'">';
 		$content .= '  		<a class="activity-card__body" href="' . esc_url( get_permalink() ) .'" rel="bookmark">';
 		$content .= '  			<h2>'. get_the_title() . '</h2>';
