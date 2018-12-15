@@ -4,7 +4,7 @@ Template Name: Activities List Page
 */
 
 $categories = get_terms( array( 'taxonomy' => 'category', 'hide_empty' => true, ) );
-$phases = get_terms( array( 'taxonomy' => 'phase', 'hide_empty' => true, ) );
+$phases = get_terms( array( 'taxonomy' => 'phase', 'hide_empty' => true, 'orderby' => 'slug', ) );
 
 get_header();
 ?>
