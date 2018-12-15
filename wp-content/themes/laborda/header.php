@@ -28,34 +28,47 @@
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<?php
-					the_custom_logo();
-					if ( is_front_page() && is_home() ) :
-						?>
-						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-						<?php
-					else :
-						?>
-						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-						<?php
-					endif; ?>
-					<span class="badge badge-pill badge-dark site-title-badge">BETA</span>
-				</div><!-- .col -->
-				<div class="col">
-					<nav id="site-navigation" class="main-navigation">
-						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'laborda' ); ?></button>
-						<?php
-						wp_nav_menu( array(
-							'theme_location' => 'menu-header',
-							'menu_id' => 'primary-menu',
-						) );
-						?>
-						<a class="search-button" href="<?php echo get_permalink( get_page_by_path( 'search' ) ) ?>">
-							<i class="material-icons icon">
-								search
-							</i>
-						</a>
-					</nav><!-- #site-navigation -->
+					<nav class="navbar navbar-expand-lg navbar-light bg-light">
+						<div class="navbar-brand">
+							<?php
+							the_custom_logo();
+							if ( is_front_page() && is_home() ) :
+								?>
+								<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+								<?php
+							else :
+								?>
+								<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+								<?php
+							endif; ?>
+							<span class="badge badge-pill badge-dark site-title-badge">BETA</span>
+						</div><!-- .navbar-brand -->
+					  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavigationToggler" aria-controls="mainNavigationToggler" aria-expanded="false" aria-label="Toggle navigation">
+					    <span class="navbar-toggler-icon"></span>
+					  </button>
+
+					  <div class="collapse navbar-collapse main-navigation" id="mainNavigationToggler">
+							<?php
+							wp_nav_menu( array(
+								'theme_location' => 'menu-header',
+								'menu_id' => 'primary-menu',
+								'menu_class' => 'navbar-nav'
+							) );
+							?>
+							<a class="search-button d-none d-lg-block " href="<?php echo get_permalink( get_page_by_path( 'search' ) ) ?>">
+								<i class="material-icons icon">
+									search
+								</i>
+							</a>
+					    <form class="input-group search-form d-lg-none" role="search" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+					      <input type="text" class="form-control" id="search" aria-label="Search" placeholder="<?php echo esc_attr_x( 'Search…', 'placeholder', 'laborda' ); ?>" value="<?php echo get_search_query(); ?>" name="s" />
+					      <div class="input-group-append">
+					        <button type="submit" class="btn btn-primary"><?php echo _x( 'Search', 'submit button', 'laborda' ); ?></button>
+					      </div>
+					    </form>
+					  </div>
+					</nav>
+
 				</div><!-- .col -->
 			</div><!-- .row -->
 		</div><!-- .container -->
