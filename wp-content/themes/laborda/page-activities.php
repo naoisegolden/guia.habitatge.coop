@@ -58,7 +58,7 @@ get_header();
 
 			<div class="btn-group mr-2">
         <button type="button" class="btn btn-default btn-filter dropdown-toggle" data-toggle="dropdown">
-					<?php echo __( 'Ordena', 'laborda' ); ?>
+					<?php echo __( 'Order', 'laborda' ); ?>
 				</button>
 				<ul class="dropdown-menu dropdown-sort-js">
           <li>

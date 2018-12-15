@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col">
-    <h2><?php echo __("Exemples de la comunitat", "laborda"); ?></h2>
+    <h2><?php echo __("Other examples from the community", "laborda"); ?></h2>
 
     <div id="examples-accordion" class="mb-4">
       <?php
