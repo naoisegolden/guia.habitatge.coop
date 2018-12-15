@@ -106,13 +106,13 @@ function laborda_scripts() {
 	wp_enqueue_style( 'bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css' );
 	wp_enqueue_style( 'font-awesome-brands', 'https://use.fontawesome.com/releases/v5.5.0/css/brands.css' );
 	wp_enqueue_style( 'font-awesome', 'https://use.fontawesome.com/releases/v5.5.0/css/fontawesome.css' );
-	wp_enqueue_style( 'laborda-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'laborda-style', get_stylesheet_uri(), array(), '20181215' );
 
 	wp_enqueue_script( 'laborda-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 	wp_enqueue_script( 'jquery', 'https://code.jquery.com/jquery-3.3.1.slim.min.js' );
 	wp_enqueue_script( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js' );
 	wp_enqueue_script( 'shufflejs', 'https://unpkg.com/shufflejs@5.2.0/dist/shuffle.js' );
-	wp_enqueue_script( 'laborda-scripts', get_template_directory_uri() . '/js/scripts.js', array(), '20181029', true );
+	wp_enqueue_script( 'laborda-scripts', get_template_directory_uri() . '/js/scripts.js', array(), '20181215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
