@@ -1456,6 +1456,11 @@ body.activities-list-view .activity-card p {
 	border-color: var(--primary-color-darker) !important;
 }
 
+.btn.cn-button {
+	background-color: var(--footer-background-color);
+	border-color: var(--footer-background-color);
+}
+
 .card-header {
 	background-color: var(--white);
 }
