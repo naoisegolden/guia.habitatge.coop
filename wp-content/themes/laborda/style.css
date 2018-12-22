@@ -1457,8 +1457,12 @@ body.activities-list-view .activity-card p {
 }
 
 .btn.cn-button {
-	background-color: var(--footer-background-color);
-	border-color: var(--footer-background-color);
+	background-color: var(--font-color);
+	border-color: var(--font-color);
+}
+
+.badge-dark {
+	background-color: var(--font-color);
 }
 
 .card-header {
