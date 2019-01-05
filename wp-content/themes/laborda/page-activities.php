@@ -12,7 +12,7 @@ get_header();
 <div class="container mt-4">
   <div class="row">
     <div class="col-12">
-    	<div class="btn-group mr-2">
+      <div class="btn-group mr-2 mb-2">
         <button type="button" class="btn btn-default btn-filter dropdown-toggle" data-toggle="dropdown">
 					<?php echo __( 'Filter by category', 'laborda' ); ?>
 				</button>
@@ -34,7 +34,7 @@ get_header();
 				</ul>
 			</div><!-- .btn-group -->
 
-			<div class="btn-group mr-2">
+			<div class="btn-group mr-2 mb-2">
         <button type="button" class="btn btn-default btn-filter dropdown-toggle" data-toggle="dropdown">
 					<?php echo __( 'Filter by phase', 'laborda' ); ?>
 				</button>
@@ -56,7 +56,7 @@ get_header();
 				</ul>
   		</div><!-- .btn-group -->
 
-			<div class="btn-group mr-2">
+			<div class="btn-group mr-2 mb-2">
         <button type="button" class="btn btn-default btn-filter dropdown-toggle" data-toggle="dropdown">
 					<?php echo __( 'Order', 'laborda' ); ?>
 				</button>
