@@ -11,7 +11,7 @@ get_header();
 
 <div class="container mt-4">
   <div class="row">
-    <div class="col-12">
+    <div class="col-9">
       <div class="btn-group mr-2 mb-2">
         <button type="button" class="btn btn-default btn-filter dropdown-toggle" data-toggle="dropdown">
 					<?php echo __( 'Filter by category', 'laborda' ); ?>
@@ -83,7 +83,9 @@ get_header();
 					</li>
 				</ul>
   		</div><!-- .btn-group -->
+    </div>
 
+    <div class="col-3">
 			<div class="btn-group float-right">
 				<button type="button" class="btn btn-default btn-round-icon btn-toggle toggle-body-js" data-toggle-value="activities-list-view"  data-toggle="button">
 					<i class="material-icons icon">apps</i>
