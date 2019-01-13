@@ -977,7 +977,7 @@ object {
 	--title-color: var(--primary-color);
 	--title-margin: 42px;
 
-	--header-padding: 16px;
+	--header-padding: 1rem;
 	--header-menu-font: bold 30px var(--font-family-secondary);
 	--header-menu-gutter: 30px;
 	--container-content-padding: 64px;
@@ -1119,13 +1119,13 @@ input[type="tel"] {
 }
 
 .search-button {
-	height: var(--icon-size);
-	width: var(--icon-size);
+	height: var(--small-icon-size);
+	width: var(--small-icon-size);
 }
 
 .search-button .icon {
-	font-size: var(--icon-size);
-	font-weight: var(--font-weight-medium);
+	font-size: 28px;
+	font-weight: bold;
 }
 
 .search-result .entry-title {
@@ -1445,6 +1445,10 @@ body.activities-list-view .activity-card p {
 }
 
 /* Bootstrap overwrites */
+
+.navbar {
+	padding: 0;
+}
 
 .btn {
 	font-size: var(--button-font-size);
