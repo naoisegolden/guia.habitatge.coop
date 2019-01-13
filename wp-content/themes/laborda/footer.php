@@ -27,19 +27,15 @@
 	<footer id="colophon" class="site-footer">
 		<div class="container">
 			<div class="row">
-				<div class="col">
-					<div class="row">
-						<div class="col">
-							<p class="site-description"><?php echo get_bloginfo( 'description', 'display' ); ?></p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col">
-							<?php dynamic_sidebar( 'footer_left' ); ?>
-						</div>
-					</div>
+				<div class="col-12">
+					<p class="site-description"><?php echo get_bloginfo( 'description', 'display' ); ?></p>
 				</div>
-				<div class="col">
+			</div>
+			<div class="row text-center text-md-left">
+				<div class="col-12 col-md-8">
+					<?php dynamic_sidebar( 'footer_left' ); ?>
+				</div>
+				<div class="col-12 col-md-4 text-center text-md-right mt-5 mt-md-auto">
 					<?php dynamic_sidebar( 'footer_right' ); ?>
 				</div>
 			</div><!-- .row -->

@@ -1161,13 +1161,14 @@ input[type="tel"] {
 
 .site-footer .site-description {
 	color: inherit;
-	margin-bottom: 125px;
-	width: 385px;
-	display: inline-block;
+	max-width: 385px;
+	margin-bottom: 3rem;
+	margin-left: auto;
+	margin-right: auto;
 	line-height: 1rem;
 	text-transform: uppercase;
 	font: var(--title-font);
-	font-size: 24px;
+	font-size: 22px;
 	line-height: 28px;
 }
 .site-footer .site-description:before {
@@ -1180,10 +1181,20 @@ input[type="tel"] {
 	width: var(--footer-logo-width);
 }
 
+@media (min-width: 768px) {
+	.site-footer .site-description {
+		font-size: 24px;
+		margin-bottom: 125px;
+		margin-left: 0;
+	}
+}
+
+
 .site-footer .menu {
 	list-style: none;
 	text-align: right;
-	font-size:
+	margin: 0;
+	padding: 0;
 }
 
 .site-footer .menu a {
@@ -1473,4 +1484,9 @@ body.activities-list-view .activity-card p {
 .jumbotron {
 	background-size: cover;
 	background-position: center center;
+}
+
+.text-center .menu,
+.text-md-right .menu {
+	text-align: inherit;
 }
