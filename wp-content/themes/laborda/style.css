@@ -1159,37 +1159,6 @@ input[type="tel"] {
 	padding: var(--footer-padding) 0;
 }
 
-.site-footer .site-description {
-	color: inherit;
-	max-width: 385px;
-	margin-bottom: 3rem;
-	margin-left: auto;
-	margin-right: auto;
-	line-height: 1rem;
-	text-transform: uppercase;
-	font: var(--title-font);
-	font-size: 22px;
-	line-height: 28px;
-}
-.site-footer .site-description:before {
-	background: url(images/logo-white.svg) center center no-repeat;
-	content: '';
-	display: inline-block;
-	float: left;
-	margin-right: var(--spacer);
-	height: var(--footer-logo-height);
-	width: var(--footer-logo-width);
-}
-
-@media (min-width: 768px) {
-	.site-footer .site-description {
-		font-size: 24px;
-		margin-bottom: 125px;
-		margin-left: 0;
-	}
-}
-
-
 .site-footer .menu {
 	list-style: none;
 	text-align: right;
