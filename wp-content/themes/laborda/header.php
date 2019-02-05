@@ -31,8 +31,9 @@
 					<nav class="navbar navbar-expand-lg navbar-light bg-light">
 						<div class="navbar-brand">
 							<?php
-							the_custom_logo();
-							if ( is_front_page() && is_home() ) :
+							if ( has_custom_logo() ) :
+								the_custom_logo();
+							elseif ( is_front_page() && is_home() ) :
 								?>
 								<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 								<?php
@@ -41,7 +42,6 @@
 								<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 								<?php
 							endif; ?>
-							<span class="badge badge-pill badge-dark site-title-badge">BETA</span>
 						</div><!-- .navbar-brand -->
 					  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavigationToggler" aria-controls="mainNavigationToggler" aria-expanded="false" aria-label="Toggle navigation">
 					    <span class="navbar-toggler-icon"></span>

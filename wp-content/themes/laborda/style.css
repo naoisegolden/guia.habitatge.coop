@@ -1090,9 +1090,9 @@ input[type="tel"] {
 	margin-top: -8px;
 }
 
-.site-title-badge {
-	font-size: 12px;
-	vertical-align: top;
+.custom-logo-link img {
+	max-height: var(--logo-height);
+	width: auto;
 }
 
 .main-navigation {
@@ -1475,10 +1475,6 @@ body.activities-list-view .activity-card p {
 .btn.cn-button {
 	background-color: var(--font-color);
 	border-color: var(--font-color);
-}
-
-.badge-dark {
-	background-color: var(--font-color);
 }
 
 .card-header {
