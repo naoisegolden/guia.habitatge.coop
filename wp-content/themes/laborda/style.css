@@ -1322,6 +1322,13 @@ body.activities-list-view .activity-card p {
 	width: 100% !important;
 }
 
+@media (min-width: 768px) {
+	.btn-wide-md {
+		padding: 0 calc(4 * var(--spacer)) !important;
+	}
+}
+
+
 .btn-round-icon {
 	border-radius: 50%;
 	height: 54px;
