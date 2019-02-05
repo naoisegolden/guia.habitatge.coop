@@ -358,10 +358,10 @@ function activities_shortcode( $atts, $content = null ) {
 
 		$content .= '  <div class="col-12 col-sm-6 col-md-4 col-lg-3">';
 		$content .= '  	<article class="' . $classes .'">';
-		$content .= '  		<a class="activity-card__body" href="' . esc_url( get_permalink() ) .'" rel="bookmark">';
+		$content .= '  		<span class="activity-card__body">';
 		$content .= '  			<h2>'. get_the_title() . '</h2>';
 		$content .= '  			<p>' . get_the_excerpt() . '</p>';
-		$content .= '  		</a>';
+		$content .= '  		</span>';
 		$content .= '  	</article>';
 		$content .= '  </div>';
 
