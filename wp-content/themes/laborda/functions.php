@@ -110,7 +110,7 @@ function laborda_scripts() {
 	wp_enqueue_script( 'jquery', 'https://code.jquery.com/jquery-3.3.1.slim.min.js' );
 	wp_enqueue_script( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js' );
 	wp_enqueue_script( 'shufflejs', 'https://unpkg.com/shufflejs@5.2.0/dist/shuffle.js' );
-	wp_enqueue_script( 'laborda-scripts', get_template_directory_uri() . '/js/scripts.js', array(), '20181215', true );
+	wp_enqueue_script( 'laborda-scripts', get_template_directory_uri() . '/js/scripts.js', array(), '20190207', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
