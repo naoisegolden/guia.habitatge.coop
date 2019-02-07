@@ -88,8 +88,8 @@ get_header();
     <div class="col-3">
 			<div class="btn-group float-right">
 				<button type="button" class="btn btn-default btn-round-icon btn-toggle toggle-body-js" data-toggle-value="activities-list-view"  data-toggle="button">
-					<i class="material-icons icon">apps</i>
-					<i class="material-icons icon">list</i>
+					<i class="icon-cards">apps</i>
+					<i class="icon-list">list</i>
 				</button>
 			</div>
 		</div>

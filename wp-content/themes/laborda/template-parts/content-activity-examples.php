@@ -12,7 +12,7 @@
           <div class="card mb-2">
             <div class="card-header" id="heading-<?=$index?>">
               <h5 class="mb-0">
-                <i class="material-icons icon align-middle">arrow_drop_down</i>
+                <i class="icon-down align-middle"></i>
                 <button class="btn btn-link" data-toggle="collapse" data-target="#collapse-<?=$index?>" aria-expanded="true" aria-controls="collapse-<?=$index?>">
                   <?php echo the_sub_field('example_title'); ?>
                 </button>

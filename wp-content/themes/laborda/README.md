@@ -22,10 +22,9 @@ This theme depends on the following plugins:
 * shortcodes-ultimate
 
 This theme uses the following CSS libraries:
-* google-fonts
+* google fonts (Roboto and Roboto Condensed)
+* fontello
 * bootstrap
-* font-awesome-brands
-* font-awesome
 
 This theme uses the following JavaScript libraries:
 * jquery

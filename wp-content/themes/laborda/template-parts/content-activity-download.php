@@ -18,20 +18,20 @@ $facebook_link = 'https://www.facebook.com/sharer/sharer.php?u=' . $permalink;
 <div class="row">
   <div class="col-auto mr-auto mb-4">
     <a href="<?php echo $facebook_link; ?>" target="_blank" class="social-button mt-4 mr-2">
-      <i class="fab fa-facebook-f align-text-bottom"></i>
+      <i class="icon-facebook"></i>
     </a>
     <a href="<?php echo $twitter_link; ?>" target="_blank" class="social-button mt-4 mr-2">
-      <i class="fab fa-twitter align-text-bottom"></i>
+      <i class="icon-twitter"></i>
     </a>
   </div>
   <div class="col-auto mb-4">
     <div class="download-statistics mr-4 mt-4">
-      <i class="material-icons icon mr-1">visibility</i>
+      <i class="icon-eye mr-1"></i>
       <span><?php echo $view_count; ?></span>
     </div>
     <?php if ( $download_link ) : ?>
       <div class="download-statistics mr-5 mt-4">
-        <i class="material-icons icon mr-1">save_alt</i>
+        <i class="icon-download mr-1">save_alt</i>
         <span><?php echo $download_count; ?></span>
       </div>
       <a class="btn btn-primary download-button" href="<?php echo $download_link; ?>" download role="button">

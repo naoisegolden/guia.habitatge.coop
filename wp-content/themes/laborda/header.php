@@ -56,9 +56,7 @@
 							) );
 							?>
 							<a class="search-button d-none d-lg-block " href="<?php echo get_permalink( get_page_by_path( 'search' ) ) ?>">
-								<i class="material-icons icon">
-									search
-								</i>
+								<i class="icon-search"></i>
 							</a>
 					    <form class="input-group search-form d-lg-none" role="search" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
 					      <input type="text" class="form-control" id="search" aria-label="Search" placeholder="<?php echo esc_attr_x( 'Search…', 'placeholder', 'laborda' ); ?>" value="<?php echo get_search_query(); ?>" name="s" />
