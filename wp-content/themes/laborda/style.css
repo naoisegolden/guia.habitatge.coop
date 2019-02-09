@@ -1047,7 +1047,7 @@ object {
 	--logo-height: 40px;
 	--logo-width: 117px;
 	--icon-size: 42px;
-	--small-icon-size: 24px;
+	--icon-size-small: 24px;
 
 	--jumbotron-padding: 56px;
 
@@ -1180,14 +1180,10 @@ input[type="tel"] {
 	font: var(--header-menu-font);
 }
 
-.search-button {
-	height: var(--small-icon-size);
-	width: var(--small-icon-size);
-}
-
 .search-button .icon {
-	font-size: 28px;
-	font-weight: bold;
+	font-size: var(--icon-size-small);
+	top: -0.2em;
+	position: relative;
 }
 
 .search-result .entry-title {
@@ -1326,7 +1322,7 @@ body.activities-list-view .activity-card p {
 }
 
 .download-statistics {
-	font-size: var(--small-icon-size);
+	font-size: var(--icon-size-small);
 	float: left;
 }
 
@@ -1362,7 +1358,6 @@ body.activities-list-view .activity-card p {
 	}
 }
 
-
 .btn-round-icon {
 	border-radius: 50%;
 	height: 54px;
@@ -1370,7 +1365,9 @@ body.activities-list-view .activity-card p {
 	padding: 12px !important;
 }
 .btn-round-icon .icon {
-	font-size: 28px;
+	font-size: var(--icon-size-small);
+	margin-left: -0.1em;
+	margin-top: 0.15rem;
 }
 
 .btn-toggle.active i:first-of-type { display: none; }
